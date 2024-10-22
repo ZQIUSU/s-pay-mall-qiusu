@@ -1,203 +1,524 @@
-24-10-18.10:52:53.202 [main            ] INFO  Application            - Starting Application using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 1460 (D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes started by 24409 in D:\workspace\s-pay-mall-zqiusu)
-24-10-18.10:52:53.204 [main            ] INFO  Application            - The following 1 profile is active: "prod"
-24-10-18.10:52:54.285 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
-24-10-18.10:52:54.988 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
-24-10-18.10:52:55.001 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
-24-10-18.10:52:55.002 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-10-18.10:52:55.002 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-10-18.10:52:55.274 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-10-18.10:52:55.274 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2029 ms
-24-10-18.10:52:55.590 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
-24-10-18.10:52:55.593 [main            ] INFO  StandardService        - Stopping service [Tomcat]
-24-10-18.10:52:55.602 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+24-10-22.10:44:13.482 [main            ] INFO  Application            - Starting Application using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 11588 (D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes started by 24409 in D:\workspace\s-pay-mall-zqiusu)
+24-10-22.10:44:13.485 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-10-22.10:44:14.570 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
+24-10-22.10:44:15.020 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+24-10-22.10:44:15.030 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+24-10-22.10:44:15.030 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-10-22.10:44:15.030 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-10-22.10:44:15.141 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-10-22.10:44:15.141 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1613 ms
+24-10-22.10:44:15.502 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+24-10-22.10:44:15.505 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-10-22.10:44:15.547 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-24-10-18.10:52:55.647 [main            ] ERROR SpringApplication      - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
-	at org.example.Application.main(Application.java:12)
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
-	... 19 common frames omitted
-Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
-	at org.springframework.util.Assert.state(Assert.java:97)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:175)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:125)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90)
+24-10-22.10:44:15.583 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+24-10-22.11:01:37.966 [main            ] INFO  Application            - Starting Application using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 18772 (D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes started by 24409 in D:\workspace\s-pay-mall-zqiusu)
+24-10-22.11:01:37.969 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-10-22.11:01:38.886 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
+24-10-22.11:01:39.342 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 80 (http)
+24-10-22.11:01:39.351 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-80"]
+24-10-22.11:01:39.352 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-10-22.11:01:39.352 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-10-22.11:01:39.458 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-10-22.11:01:39.458 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1445 ms
+24-10-22.11:01:39.864 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+24-10-22.11:01:39.868 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-10-22.11:01:39.932 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-10-22.11:01:39.969 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+24-10-22.11:05:46.494 [main            ] INFO  Application            - Starting Application using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 20736 (D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes started by 24409 in D:\workspace\s-pay-mall-zqiusu)
+24-10-22.11:05:46.498 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-10-22.11:05:47.337 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
+24-10-22.11:05:47.833 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 80 (http)
+24-10-22.11:05:47.843 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-80"]
+24-10-22.11:05:47.844 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-10-22.11:05:47.844 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-10-22.11:05:47.968 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-10-22.11:05:47.968 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1400 ms
+24-10-22.11:05:48.302 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+24-10-22.11:05:48.305 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-10-22.11:05:48.319 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-10-22.11:05:48.341 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+24-10-22.11:40:45.534 [main            ] INFO  Application            - Starting Application using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 15520 (D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes started by 24409 in D:\workspace\s-pay-mall-zqiusu)
+24-10-22.11:40:45.536 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-10-22.11:40:46.462 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
+24-10-22.11:40:46.881 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 80 (http)
+24-10-22.11:40:46.889 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-80"]
+24-10-22.11:40:46.889 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-10-22.11:40:46.889 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-10-22.11:40:46.992 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-10-22.11:40:46.992 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1417 ms
+24-10-22.11:40:47.500 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+24-10-22.11:40:47.503 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-10-22.11:40:47.525 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-10-22.11:40:47.562 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+24-10-22.11:42:30.959 [main            ] INFO  Application            - Starting Application using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 10476 (D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes started by 24409 in D:\workspace\s-pay-mall-zqiusu)
+24-10-22.11:42:30.962 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-10-22.11:42:31.590 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
+24-10-22.11:42:31.996 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 80 (http)
+24-10-22.11:42:32.004 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-80"]
+24-10-22.11:42:32.005 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-10-22.11:42:32.005 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-10-22.11:42:32.130 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-10-22.11:42:32.130 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1104 ms
+24-10-22.11:42:32.487 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+24-10-22.11:42:32.490 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-10-22.11:42:32.504 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-10-22.11:42:32.530 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+24-10-22.11:43:43.219 [main            ] INFO  Application            - Starting Application using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 9656 (D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes started by 24409 in D:\workspace\s-pay-mall-zqiusu)
+24-10-22.11:43:43.222 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-10-22.11:43:43.856 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
+24-10-22.11:43:44.228 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 80 (http)
+24-10-22.11:43:44.241 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-80"]
+24-10-22.11:43:44.241 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-10-22.11:43:44.242 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-10-22.11:43:44.354 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-10-22.11:43:44.355 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1095 ms
+24-10-22.11:43:44.671 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+24-10-22.11:43:44.674 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-10-22.11:43:44.686 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-10-22.11:43:44.703 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+24-10-22.14:22:00.104 [main            ] INFO  Application            - Starting Application using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 9912 (D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes started by 24409 in D:\workspace\s-pay-mall-zqiusu)
+24-10-22.14:22:00.107 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-10-22.14:22:01.066 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
+24-10-22.14:22:01.475 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 80 (http)
+24-10-22.14:22:01.482 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-80"]
+24-10-22.14:22:01.483 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-10-22.14:22:01.483 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-10-22.14:22:01.645 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-10-22.14:22:01.645 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1475 ms
+24-10-22.14:22:01.990 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+24-10-22.14:22:01.993 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-10-22.14:22:02.034 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-10-22.14:22:02.077 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+24-10-22.14:37:25.766 [main            ] INFO  Application            - Starting Application using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 3300 (D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes started by 24409 in D:\workspace\s-pay-mall-zqiusu)
+24-10-22.14:37:25.778 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-10-22.14:37:27.078 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
+24-10-22.14:37:27.711 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 80 (http)
+24-10-22.14:37:27.720 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-80"]
+24-10-22.14:37:27.721 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-10-22.14:37:27.721 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-10-22.14:37:28.255 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-10-22.14:37:28.255 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2385 ms
+24-10-22.14:37:28.777 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-80"]
+24-10-22.14:37:28.880 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 80 (http) with context path ''
+24-10-22.14:37:28.912 [main            ] INFO  Application            - Started Application in 4.827 seconds (JVM running for 10.737)
+24-10-22.14:39:48.756 [http-nio-80-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-10-22.14:39:48.756 [http-nio-80-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-10-22.14:39:48.758 [http-nio-80-exec-1] INFO  DispatcherServlet      - Completed initialization in 2 ms
+24-10-22.14:39:48.867 [http-nio-80-exec-1] INFO  WeixinPortalController - 微信公众号验签信息开始 [61f79d3c5c76f5698675401bb2980fa067ee6990, 1729579187, 941769946, 4819627476386277823]
+24-10-22.14:39:48.951 [http-nio-80-exec-1] INFO  WeixinPortalController - 微信公众号验签信息完成 check：true
+24-10-22.14:40:05.758 [http-nio-80-exec-5] INFO  WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU开始 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1729579203</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[111]]></Content>
+<MsgId>24761623558787358</MsgId>
+</xml>
+24-10-22.14:40:06.358 [http-nio-80-exec-5] ERROR WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU失败 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1729579203</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[111]]></Content>
+<MsgId>24761623558787358</MsgId>
+</xml>
+com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter$UnknownFieldException: No such field org.example.common.MessageTextEntity.MsgId
+---- Debugging information ----
+message             : No such field org.example.common.MessageTextEntity.MsgId
+field               : MsgId
+class               : org.example.common.MessageTextEntity
+required-type       : org.example.common.MessageTextEntity
+converter-type      : com.thoughtworks.xstream.converters.reflection.ReflectionConverter
+version             : 1.4.10
+-------------------------------
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.handleUnknownField(AbstractReflectionConverter.java:524)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.doUnmarshal(AbstractReflectionConverter.java:375)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.unmarshal(AbstractReflectionConverter.java:281)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:134)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1486)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1466)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1337)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1328)
+	at org.example.common.XmlUtil.xmlToBean(XmlUtil.java:148)
+	at org.example.controller.WeixinPortalController.post(WeixinPortalController.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 20 common frames omitted
-24-10-18.11:04:54.572 [main            ] INFO  Application            - Starting Application using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 2928 (D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes started by 24409 in D:\workspace\s-pay-mall-zqiusu)
-24-10-18.11:04:54.575 [main            ] INFO  Application            - The following 1 profile is active: "prod"
-24-10-18.11:04:55.541 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
-24-10-18.11:04:56.159 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
-24-10-18.11:04:56.169 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
-24-10-18.11:04:56.169 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-10-18.11:04:56.169 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-10-18.11:04:56.273 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-10-18.11:04:56.273 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1626 ms
-24-10-18.11:04:56.595 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
-24-10-18.11:04:56.597 [main            ] INFO  StandardService        - Stopping service [Tomcat]
-24-10-18.11:04:56.607 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-24-10-18.11:04:56.648 [main            ] ERROR SpringApplication      - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
-	at org.example.Application.main(Application.java:12)
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
-	... 19 common frames omitted
-Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
-	at org.springframework.util.Assert.state(Assert.java:97)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:175)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:125)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48)
-	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+24-10-22.14:40:26.408 [main            ] INFO  Application            - Starting Application using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 17884 (D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes started by 24409 in D:\workspace\s-pay-mall-zqiusu)
+24-10-22.14:40:26.411 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-10-22.14:40:26.976 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
+24-10-22.14:40:27.344 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 80 (http)
+24-10-22.14:40:27.352 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-80"]
+24-10-22.14:40:27.352 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-10-22.14:40:27.352 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-10-22.14:40:27.445 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-10-22.14:40:27.445 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 999 ms
+24-10-22.14:40:28.085 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-80"]
+24-10-22.14:40:28.230 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 80 (http) with context path ''
+24-10-22.14:40:28.239 [main            ] INFO  Application            - Started Application in 2.353 seconds (JVM running for 3.655)
+24-10-22.14:40:33.114 [http-nio-80-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-10-22.14:40:33.115 [http-nio-80-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-10-22.14:40:33.115 [http-nio-80-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-10-22.14:40:33.151 [http-nio-80-exec-1] INFO  WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU开始 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1729579231</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[11]]></Content>
+<MsgId>24761622693670659</MsgId>
+</xml>
+24-10-22.14:40:33.261 [http-nio-80-exec-1] ERROR WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU失败 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1729579231</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[11]]></Content>
+<MsgId>24761622693670659</MsgId>
+</xml>
+com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter$UnknownFieldException: No such field org.example.common.MessageTextEntity.MsgId
+---- Debugging information ----
+message             : No such field org.example.common.MessageTextEntity.MsgId
+field               : MsgId
+class               : org.example.common.MessageTextEntity
+required-type       : org.example.common.MessageTextEntity
+converter-type      : com.thoughtworks.xstream.converters.reflection.ReflectionConverter
+version             : 1.4.10
+-------------------------------
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.handleUnknownField(AbstractReflectionConverter.java:524)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.doUnmarshal(AbstractReflectionConverter.java:375)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.unmarshal(AbstractReflectionConverter.java:281)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:134)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1486)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1466)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1337)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1328)
+	at org.example.common.XmlUtil.xmlToBean(XmlUtil.java:148)
+	at org.example.controller.WeixinPortalController.post(WeixinPortalController.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 20 common frames omitted
-24-10-18.11:16:32.190 [main            ] INFO  Application            - Starting Application using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 12016 (D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes started by 24409 in D:\workspace\s-pay-mall-zqiusu)
-24-10-18.11:16:32.194 [main            ] INFO  Application            - The following 1 profile is active: "prod"
-24-10-18.11:16:33.191 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
-24-10-18.11:16:33.830 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
-24-10-18.11:16:33.839 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
-24-10-18.11:16:33.840 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-10-18.11:16:33.840 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-10-18.11:16:33.945 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-10-18.11:16:33.945 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1697 ms
-24-10-18.11:16:34.261 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-24-10-18.11:16:34.264 [main            ] INFO  StandardService        - Stopping service [Tomcat]
-24-10-18.11:16:34.273 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-24-10-18.11:16:34.295 [main            ] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles prod are currently active).
-
-24-10-18.11:20:26.574 [main            ] INFO  Application            - Starting Application using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 20676 (D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes started by 24409 in D:\workspace\s-pay-mall-zqiusu)
-24-10-18.11:20:26.577 [main            ] INFO  Application            - The following 1 profile is active: "prod"
-24-10-18.11:20:27.661 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
-24-10-18.11:20:28.402 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
-24-10-18.11:20:28.412 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
-24-10-18.11:20:28.413 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-10-18.11:20:28.413 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-10-18.11:20:28.534 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-10-18.11:20:28.534 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1898 ms
-24-10-18.11:20:28.906 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-24-10-18.11:20:28.908 [main            ] INFO  StandardService        - Stopping service [Tomcat]
-24-10-18.11:20:28.942 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-24-10-18.11:20:28.984 [main            ] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles prod are currently active).
-
-24-10-18.11:21:57.677 [main            ] INFO  Application            - Starting Application using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 13412 (D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes started by 24409 in D:\workspace\s-pay-mall-zqiusu)
-24-10-18.11:21:57.682 [main            ] INFO  Application            - The following 1 profile is active: "prod"
-24-10-18.11:21:59.148 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
-24-10-18.11:21:59.960 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
-24-10-18.11:21:59.970 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
-24-10-18.11:21:59.971 [main            ] INFO  StandardService        - Starting service [Tomcat]
-24-10-18.11:21:59.971 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-24-10-18.11:22:00.233 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-24-10-18.11:22:00.233 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2469 ms
-24-10-18.11:22:00.593 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-24-10-18.11:22:00.596 [main            ] INFO  StandardService        - Stopping service [Tomcat]
-24-10-18.11:22:00.631 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-24-10-18.11:22:00.669 [main            ] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles prod are currently active).
-
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+24-10-22.14:40:52.591 [http-nio-80-exec-4] INFO  WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU开始 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1729579250</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[你好？]]></Content>
+<MsgId>24761621113587731</MsgId>
+</xml>
+24-10-22.14:40:52.607 [http-nio-80-exec-4] ERROR WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU失败 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1729579250</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[你好？]]></Content>
+<MsgId>24761621113587731</MsgId>
+</xml>
+com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter$UnknownFieldException: No such field org.example.common.MessageTextEntity.MsgId
+---- Debugging information ----
+message             : No such field org.example.common.MessageTextEntity.MsgId
+field               : MsgId
+class               : org.example.common.MessageTextEntity
+required-type       : org.example.common.MessageTextEntity
+converter-type      : com.thoughtworks.xstream.converters.reflection.ReflectionConverter
+version             : 1.4.10
+-------------------------------
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.handleUnknownField(AbstractReflectionConverter.java:524)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.doUnmarshal(AbstractReflectionConverter.java:375)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.unmarshal(AbstractReflectionConverter.java:281)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:134)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1486)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1466)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1337)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1328)
+	at org.example.common.XmlUtil.xmlToBean(XmlUtil.java:148)
+	at org.example.controller.WeixinPortalController.post(WeixinPortalController.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)

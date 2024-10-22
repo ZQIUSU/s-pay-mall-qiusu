@@ -1,11 +1,18 @@
 server:
-  port: 8080
+  port: 80
   tomcat:
     max-connections: 20
     threads:
       max: 20
       min-spare: 10
     accept-count: 10
+
+
+weixin:
+  config:
+    originalid: gh_c286e44246ca
+    token: b8b6
+
 
 spring:
   datasource:
