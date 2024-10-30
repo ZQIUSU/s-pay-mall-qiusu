@@ -12,7 +12,8 @@ weixin:
   config:
     originalid: gh_c286e44246ca
     token: b8b6
-
+    app_id: wx5c2005a3a8b211de
+    app_secret: b6315d5f262488e39e4238371dc4846c
 
 spring:
   datasource:
