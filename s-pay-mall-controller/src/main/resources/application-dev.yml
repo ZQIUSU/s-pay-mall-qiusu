@@ -14,28 +14,29 @@ weixin:
     token: b8b6
     app_id: wx5c2005a3a8b211de
     app_secret: b6315d5f262488e39e4238371dc4846c
-
-spring:
-  datasource:
-    username: root
-    password: 123456
-    url: jdbc:mysql://127.0.0.1:3306/
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    initialSize: 5
-    minIdle: 5
-    maxActive: 20
-    maxWait: 60000
-    timeBetweenEvictionRunsMillis: 60000
-    validationQuery: SELECT 1
-    testWhileIdle: true
-    testOnBorrow: false
-    testOnReturn: false
-    poolPreparedStatements: true
-    maxPoolPreparedStatementPerConnectionSize: 20
-    filters: stat
+    template-id: 1B0-TUd985i7jP90T_p60XQyrYcOkIomwinFCKalCXA
+#
+#spring:
+#  datasource:
+#    username: root
+#    password: 123456
+#    url: jdbc:mysql://127.0.0.1:3306/
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    initialSize: 5
+#    minIdle: 5
+#    maxActive: 20
+#    maxWait: 60000
+#    timeBetweenEvictionRunsMillis: 60000
+#    validationQuery: SELECT 1
+#    testWhileIdle: true
+#    testOnBorrow: false
+#    testOnReturn: false
+#    poolPreparedStatements: true
+#    maxPoolPreparedStatementPerConnectionSize: 20
+#    filters: stat
 
 # 日志
 logging:
   level:
-    root: info
+    root: fatal
   config: classpath:logback-spring.xml
