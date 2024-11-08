@@ -2,7 +2,7 @@ package org.example.service.impl;
 
 
 import com.google.common.cache.Cache;
-import org.example.domain.po.WeixinTemplateMessageVO;
+import org.example.domain.vo.WeixinTemplateMessageVO;
 import org.example.domain.req.WeixinQrCodeReq;
 import org.example.domain.res.WeixinQrCodeRes;
 import org.example.domain.res.WeixinTokenRes;
