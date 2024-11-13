@@ -23,8 +23,8 @@ public class OrderServiceTest {
     @Test
     public void test_createOrder() throws Exception {
         ShopCartReq ShopCartReq = new ShopCartReq();
-        ShopCartReq.setUserId("xiaofuge");
-        ShopCartReq.setProductId("10001");
+        ShopCartReq.setUserId("wyc");
+        ShopCartReq.setProductId("10003");
         PayOrderRes payOrderRes = orderService.createOrder(ShopCartReq);
         log.info("请求参数:{}", JSON.toJSONString(ShopCartReq));
         log.info("测试结果:{}", JSON.toJSONString(payOrderRes));

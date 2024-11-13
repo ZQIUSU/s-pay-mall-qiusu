@@ -17,7 +17,8 @@ public class Retrofit2Config {
     public Retrofit retrofit() {
         return new Retrofit.Builder()
                 .baseUrl(BASE_URL)
-                .addConverterFactory(JacksonConverterFactory.create()).build();
+                .addConverterFactory(JacksonConverterFactory.create())
+                .build();
     }
 
     @Bean

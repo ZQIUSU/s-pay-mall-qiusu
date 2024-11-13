@@ -9,15 +9,15 @@ import java.util.concurrent.TimeUnit;
 
 @Configuration
 public class GuavaConfig {
-
-    @Bean(name = "weixinAccessToken")
+    //本地缓存微信获取到的accesstoken2小时过期,openid1小时过期。
+    @Bean
     public Cache<String, String> weixinAccessToken() {
         return CacheBuilder.newBuilder()
                 .expireAfterWrite(2, TimeUnit.HOURS)
                 .build();
     }
 
-    @Bean(name = "openidToken")
+    @Bean
     public Cache<String, String> openidToken() {
         return CacheBuilder.newBuilder()
                 .expireAfterWrite(1, TimeUnit.HOURS)

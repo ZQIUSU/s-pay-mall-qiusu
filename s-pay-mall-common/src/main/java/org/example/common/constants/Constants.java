@@ -14,7 +14,6 @@ public class Constants {
     public final static String SPLIT = ",";
 
     @AllArgsConstructor
-    @NoArgsConstructor
     @Getter
     public enum ResponseCode {
         SUCCESS("0000", "调用成功"),

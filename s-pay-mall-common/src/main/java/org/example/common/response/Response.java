@@ -11,12 +11,12 @@ import java.io.Serializable;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Response<T> implements Serializable {
+public class Response implements Serializable {
 
     private static final long serialVersionUID = 7000723935764546321L;
 
     private String code;
     private String info;
-    private T data;
+    private String data;
 
 }
