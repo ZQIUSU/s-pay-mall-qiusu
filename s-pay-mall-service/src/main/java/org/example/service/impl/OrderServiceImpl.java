@@ -24,6 +24,8 @@ import java.util.Date;
 @Slf4j
 @Service
 public class OrderServiceImpl implements IOrderService {
+
+
     @Value("${alipay.notify_url}")
     private String notifyUrl;
     @Value("${alipay.return_url}")
@@ -38,7 +40,8 @@ public class OrderServiceImpl implements IOrderService {
     private AlipayClient alipayClient;
 
     @Override
-    public PayOrderRes createOrder(ShopCartReq shopCartReq) throws AlipayApiException {
+    public PayOrderRes createOrder(ShopCartReq shopCartReq) throws Exception {
+        // 1. 查询当前用户是否存在未支付订单或掉单订单
         PayOrder payOrderReq = new PayOrder();
         payOrderReq.setUserId(shopCartReq.getUserId());
         payOrderReq.setProductId(shopCartReq.getProductId());
@@ -73,12 +76,12 @@ public class OrderServiceImpl implements IOrderService {
                 .status(Constants.OrderStatusEnum.CREATE.getCode())
                 .build());
 
-        // 3. 创建支付单 todo
-
+        // 3. 创建支付单
+        PayOrder payOrder = doPrepayOrder(productVO.getProductId(), productVO.getProductName(), orderId, productVO.getPrice());
 
         return PayOrderRes.builder()
                 .orderId(orderId)
-                .payUrl("暂无")
+                .payUrl(payOrder.getPayUrl())
                 .build();
     }
 

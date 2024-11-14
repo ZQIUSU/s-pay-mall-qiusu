@@ -11,7 +11,6 @@ import java.util.TimeZone;
 public class Application {
 
         public static void main(String[] args) {
-            System.out.println("Default Time Zone: " + TimeZone.getDefault().getID());
             SpringApplication.run(Application.class);
         }
 

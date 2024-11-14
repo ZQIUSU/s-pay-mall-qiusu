@@ -36,8 +36,8 @@ public class WeixinLoginServiceImpl implements ILoginService {
     @Override
     public String createQrCodeTicket() throws Exception {
         // 1. 获取 accessToken
-        // 先从缓存里获取，获取不到的话调用接口
-
+        // 先从缓存里获取，获取不到的话调用微信API接口
+        // 通过appid获取，
         String accessToken = weixinAccessToken.getIfPresent(appid);
         if (null == accessToken) {
             Call<WeixinTokenRes> call = weixinApiService.getToken("client_credential", appid, appSecret);
