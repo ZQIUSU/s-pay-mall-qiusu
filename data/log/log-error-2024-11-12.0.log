@@ -1,54 +1,33 @@
-24-11-15.09:15:08.470 [http-nio-8080-exec-1] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
-24-11-15.09:15:29.458 [http-nio-8080-exec-2] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
-24-11-15.09:21:01.888 [http-nio-8080-exec-9] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
-24-11-15.09:26:02.367 [http-nio-8080-exec-10] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 4, column: 2]]
-24-11-15.09:27:13.357 [http-nio-8080-exec-6] ERROR HikariPool             - HikariPool-1 - Exception during pool initialization.
-java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:903)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
-	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
-	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
-	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
-	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
-	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
-	at com.sun.proxy.$Proxy69.selectOne(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
-	at com.sun.proxy.$Proxy70.queryUnPayOrder(Unknown Source)
-	at org.example.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:49)
-	at org.example.controller.AliPayController.createPayOrder(AliPayController.java:47)
+24-11-12.11:34:42.902 [http-nio-8080-exec-2] ERROR WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU失败 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1731382481</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[1]]></Content>
+<MsgId>24787434407436027</MsgId>
+</xml>
+com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter$UnknownFieldException: No such field org.example.common.weixin.MessageTextEntity.MsgId
+---- Debugging information ----
+message             : No such field org.example.common.weixin.MessageTextEntity.MsgId
+field               : MsgId
+class               : org.example.common.weixin.MessageTextEntity
+required-type       : org.example.common.weixin.MessageTextEntity
+converter-type      : com.thoughtworks.xstream.converters.reflection.ReflectionConverter
+version             : 1.4.10
+-------------------------------
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.handleUnknownField(AbstractReflectionConverter.java:524)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.doUnmarshal(AbstractReflectionConverter.java:375)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.unmarshal(AbstractReflectionConverter.java:281)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:134)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1486)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1466)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1337)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1328)
+	at org.example.common.weixin.XmlUtil.xmlToBean(XmlUtil.java:148)
+	at org.example.controller.WeixinPortalController.post(WeixinPortalController.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -99,50 +78,36 @@ java.sql.SQLNonTransientConnectionException: Could not create connection to data
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:847)
-	... 89 common frames omitted
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
-	... 91 common frames omitted
-24-11-15.09:27:13.383 [http-nio-8080-exec-6] ERROR AliPayController       - 商品下单，根据商品ID创建支付单失败 userId:10001 productId:10001
-org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-### The error may exist in file [D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes\mybatis\mapper\pay_order_mapper.xml]
-### The error may involve org.example.dao.IOrderDao.queryUnPayOrder
-### The error occurred while executing a query
-### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:96)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
-	at com.sun.proxy.$Proxy69.selectOne(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
-	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
-	at com.sun.proxy.$Proxy70.queryUnPayOrder(Unknown Source)
-	at org.example.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:49)
-	at org.example.controller.AliPayController.createPayOrder(AliPayController.java:47)
+24-11-12.11:43:41.827 [http-nio-8080-exec-8] ERROR WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU失败 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1731383020</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[1]]></Content>
+<MsgId>24787442584919686</MsgId>
+</xml>
+com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter$UnknownFieldException: No such field org.example.common.weixin.MessageTextEntity.MsgId
+---- Debugging information ----
+message             : No such field org.example.common.weixin.MessageTextEntity.MsgId
+field               : MsgId
+class               : org.example.common.weixin.MessageTextEntity
+required-type       : org.example.common.weixin.MessageTextEntity
+converter-type      : com.thoughtworks.xstream.converters.reflection.ReflectionConverter
+version             : 1.4.10
+-------------------------------
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.handleUnknownField(AbstractReflectionConverter.java:524)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.doUnmarshal(AbstractReflectionConverter.java:375)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.unmarshal(AbstractReflectionConverter.java:281)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:134)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1486)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1466)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1337)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1328)
+	at org.example.common.weixin.XmlUtil.xmlToBean(XmlUtil.java:148)
+	at org.example.controller.WeixinPortalController.post(WeixinPortalController.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -193,93 +158,37 @@ org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-Caused by: org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-### The error may exist in file [D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller\target\classes\mybatis\mapper\pay_order_mapper.xml]
-### The error may involve org.example.dao.IOrderDao.queryUnPayOrder
-### The error occurred while executing a query
-### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:149)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
-	... 58 common frames omitted
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:83)
-	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
-	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
-	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	... 65 common frames omitted
-Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:903)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
-	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
-	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
-	... 75 common frames omitted
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:847)
-	... 89 common frames omitted
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
-	... 91 common frames omitted
-24-11-15.09:35:12.520 [http-nio-8080-exec-4] ERROR AliPayController       - 商品下单，根据商品ID创建支付单失败 userId:10001 productId:10001
-java.lang.RuntimeException: com.alipay.api.AlipayApiException: RSA2签名遭遇异常，请检查编码格式是否正确。 charset=json
-	at com.alipay.api.DefaultSigner.sign(DefaultSigner.java:25)
-	at com.alipay.api.AbstractAlipayClient.getRequestHolderWithSign(AbstractAlipayClient.java:836)
-	at com.alipay.api.AbstractAlipayClient.pageExecute(AbstractAlipayClient.java:634)
-	at com.alipay.api.AbstractAlipayClient.pageExecute(AbstractAlipayClient.java:629)
-	at org.example.service.impl.OrderServiceImpl.doPrepayOrder(OrderServiceImpl.java:100)
-	at org.example.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:80)
-	at org.example.controller.AliPayController.createPayOrder(AliPayController.java:47)
+24-11-12.11:50:54.580 [http-nio-8080-exec-6] ERROR WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU失败 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1731383454</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[TEMPLATESENDJOBFINISH]]></Event>
+<MsgID>3721038582661054466</MsgID>
+<Status><![CDATA[success]]></Status>
+</xml>
+com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter$UnknownFieldException: No such field org.example.common.weixin.MessageTextEntity.MsgID
+---- Debugging information ----
+message             : No such field org.example.common.weixin.MessageTextEntity.MsgID
+field               : MsgID
+class               : org.example.common.weixin.MessageTextEntity
+required-type       : org.example.common.weixin.MessageTextEntity
+converter-type      : com.thoughtworks.xstream.converters.reflection.ReflectionConverter
+version             : 1.4.10
+-------------------------------
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.handleUnknownField(AbstractReflectionConverter.java:524)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.doUnmarshal(AbstractReflectionConverter.java:375)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.unmarshal(AbstractReflectionConverter.java:281)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:134)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1486)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1466)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1337)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1328)
+	at org.example.common.weixin.XmlUtil.xmlToBean(XmlUtil.java:148)
+	at org.example.controller.WeixinPortalController.post(WeixinPortalController.java:67)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -330,26 +239,13 @@ java.lang.RuntimeException: com.alipay.api.AlipayApiException: RSA2签名遭遇�
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-Caused by: com.alipay.api.AlipayApiException: RSA2签名遭遇异常，请检查编码格式是否正确。 charset=json
-	at com.alipay.api.internal.util.asymmetric.BaseAsymmetricEncryptor.sign(BaseAsymmetricEncryptor.java:81)
-	at com.alipay.api.internal.util.AlipaySignature.rsaSign(AlipaySignature.java:422)
-	at com.alipay.api.DefaultSigner.sign(DefaultSigner.java:23)
-	... 56 common frames omitted
-Caused by: java.io.UnsupportedEncodingException: json
-	at java.lang.StringCoding.encode(StringCoding.java:341)
-	at java.lang.String.getBytes(String.java:918)
-	at com.alipay.api.internal.util.asymmetric.RSAEncryptor.doSign(RSAEncryptor.java:125)
-	at com.alipay.api.internal.util.asymmetric.BaseAsymmetricEncryptor.sign(BaseAsymmetricEncryptor.java:75)
-	... 58 common frames omitted
-24-11-15.09:50:45.882 [http-nio-8080-exec-2] ERROR AliPayController       - 商品下单，根据商品ID创建支付单失败 userId:10001 productId:10001
-java.lang.RuntimeException: com.alipay.api.AlipayApiException: RSA2签名遭遇异常，请检查编码格式是否正确。 charset=json
-	at com.alipay.api.DefaultSigner.sign(DefaultSigner.java:25)
-	at com.alipay.api.AbstractAlipayClient.getRequestHolderWithSign(AbstractAlipayClient.java:836)
-	at com.alipay.api.AbstractAlipayClient.pageExecute(AbstractAlipayClient.java:634)
-	at com.alipay.api.AbstractAlipayClient.pageExecute(AbstractAlipayClient.java:629)
-	at org.example.service.impl.OrderServiceImpl.doPrepayOrder(OrderServiceImpl.java:100)
-	at org.example.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:59)
-	at org.example.controller.AliPayController.createPayOrder(AliPayController.java:47)
+24-11-12.16:57:27.260 [http-nio-8080-exec-1] ERROR LoginController        - 生成微信扫码登录 ticket 失败
+java.lang.NullPointerException: null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:903)
+	at com.google.common.cache.LocalCache.put(LocalCache.java:4250)
+	at com.google.common.cache.LocalCache$LocalManualCache.put(LocalCache.java:4950)
+	at org.example.service.impl.WeixinLoginServiceImpl.createQrCodeTicket(WeixinLoginServiceImpl.java:47)
+	at org.example.controller.LoginController.weixinQrCodeTicket(LoginController.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -363,8 +259,8 @@ java.lang.RuntimeException: com.alipay.api.AlipayApiException: RSA2签名遭遇�
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
@@ -400,28 +296,13 @@ java.lang.RuntimeException: com.alipay.api.AlipayApiException: RSA2签名遭遇�
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-Caused by: com.alipay.api.AlipayApiException: RSA2签名遭遇异常，请检查编码格式是否正确。 charset=json
-	at com.alipay.api.internal.util.asymmetric.BaseAsymmetricEncryptor.sign(BaseAsymmetricEncryptor.java:81)
-	at com.alipay.api.internal.util.AlipaySignature.rsaSign(AlipaySignature.java:422)
-	at com.alipay.api.DefaultSigner.sign(DefaultSigner.java:23)
-	... 56 common frames omitted
-Caused by: java.io.UnsupportedEncodingException: json
-	at java.lang.StringCoding.encode(StringCoding.java:341)
-	at java.lang.String.getBytes(String.java:918)
-	at com.alipay.api.internal.util.asymmetric.RSAEncryptor.doSign(RSAEncryptor.java:125)
-	at com.alipay.api.internal.util.asymmetric.BaseAsymmetricEncryptor.sign(BaseAsymmetricEncryptor.java:75)
-	... 58 common frames omitted
-24-11-15.09:51:25.358 [http-nio-8080-exec-6] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
-24-11-15.10:01:15.369 [http-nio-8080-exec-7] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
-24-11-15.10:01:48.560 [http-nio-8080-exec-3] ERROR AliPayController       - 商品下单，根据商品ID创建支付单失败 userId:10001 productId:10001
-java.lang.RuntimeException: com.alipay.api.AlipayApiException: RSA2签名遭遇异常，请检查编码格式是否正确。 charset=json
-	at com.alipay.api.DefaultSigner.sign(DefaultSigner.java:25)
-	at com.alipay.api.AbstractAlipayClient.getRequestHolderWithSign(AbstractAlipayClient.java:836)
-	at com.alipay.api.AbstractAlipayClient.pageExecute(AbstractAlipayClient.java:634)
-	at com.alipay.api.AbstractAlipayClient.pageExecute(AbstractAlipayClient.java:629)
-	at org.example.service.impl.OrderServiceImpl.doPrepayOrder(OrderServiceImpl.java:100)
-	at org.example.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:59)
-	at org.example.controller.AliPayController.createPayOrder(AliPayController.java:47)
+24-11-12.17:00:05.650 [http-nio-8080-exec-2] ERROR LoginController        - 生成微信扫码登录 ticket 失败
+java.lang.NullPointerException: null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:903)
+	at com.google.common.cache.LocalCache.put(LocalCache.java:4250)
+	at com.google.common.cache.LocalCache$LocalManualCache.put(LocalCache.java:4950)
+	at org.example.service.impl.WeixinLoginServiceImpl.createQrCodeTicket(WeixinLoginServiceImpl.java:48)
+	at org.example.controller.LoginController.weixinQrCodeTicket(LoginController.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -435,8 +316,8 @@ java.lang.RuntimeException: com.alipay.api.AlipayApiException: RSA2签名遭遇�
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
@@ -472,15 +353,60 @@ java.lang.RuntimeException: com.alipay.api.AlipayApiException: RSA2签名遭遇�
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
-Caused by: com.alipay.api.AlipayApiException: RSA2签名遭遇异常，请检查编码格式是否正确。 charset=json
-	at com.alipay.api.internal.util.asymmetric.BaseAsymmetricEncryptor.sign(BaseAsymmetricEncryptor.java:81)
-	at com.alipay.api.internal.util.AlipaySignature.rsaSign(AlipaySignature.java:422)
-	at com.alipay.api.DefaultSigner.sign(DefaultSigner.java:23)
-	... 56 common frames omitted
-Caused by: java.io.UnsupportedEncodingException: json
-	at java.lang.StringCoding.encode(StringCoding.java:341)
-	at java.lang.String.getBytes(String.java:918)
-	at com.alipay.api.internal.util.asymmetric.RSAEncryptor.doSign(RSAEncryptor.java:125)
-	at com.alipay.api.internal.util.asymmetric.BaseAsymmetricEncryptor.sign(BaseAsymmetricEncryptor.java:75)
-	... 58 common frames omitted
-24-11-15.10:22:10.713 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m22s855ms142µs100ns).
+24-11-12.17:01:38.682 [http-nio-8080-exec-2] ERROR LoginController        - 生成微信扫码登录 ticket 失败
+java.lang.NullPointerException: null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:903)
+	at com.google.common.cache.LocalCache.put(LocalCache.java:4250)
+	at com.google.common.cache.LocalCache$LocalManualCache.put(LocalCache.java:4950)
+	at org.example.service.impl.WeixinLoginServiceImpl.createQrCodeTicket(WeixinLoginServiceImpl.java:48)
+	at org.example.controller.LoginController.weixinQrCodeTicket(LoginController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
