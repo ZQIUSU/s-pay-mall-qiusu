@@ -1,81 +1,306 @@
-24-11-13.08:51:20.563 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 18668 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
-24-11-13.08:51:20.566 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
-24-11-13.08:51:27.220 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 7.422 seconds (JVM running for 10.389)
-24-11-13.08:51:27.818 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-11-13.08:51:28.489 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-11-13.08:51:29.001 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
-24-11-13.08:51:29.005 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"8716380686752619","payUrl":"暂无"}
-24-11-13.08:51:29.060 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-11-13.08:51:29.129 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-11-13.09:03:40.332 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 23244 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
-24-11-13.09:03:40.334 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
-24-11-13.09:03:45.873 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 6.304 seconds (JVM running for 9.106)
-24-11-13.09:03:46.382 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-11-13.09:03:46.860 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-11-13.09:03:47.393 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
-24-11-13.09:03:47.397 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"9177123634389257","payUrl":"暂无"}
-24-11-13.09:03:47.427 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-11-13.09:03:47.474 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-11-13.09:19:02.149 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 20972 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
-24-11-13.09:19:02.150 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
-24-11-13.09:19:07.634 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 6.299 seconds (JVM running for 9.105)
-24-11-13.09:19:08.094 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-11-13.09:19:08.764 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-11-13.09:19:09.428 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
-24-11-13.09:19:09.436 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"7226443183849785","payUrl":"暂无"}
-24-11-13.09:19:09.465 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-11-13.09:19:09.504 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-11-13.09:22:08.224 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 13112 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
-24-11-13.09:22:08.225 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
-24-11-13.09:22:12.295 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.932 seconds (JVM running for 6.373)
-24-11-13.09:22:12.606 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-11-13.09:22:12.993 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-11-13.09:22:13.409 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
-24-11-13.09:22:13.429 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"0542844319086421","payUrl":"暂无"}
-24-11-13.09:22:13.445 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-11-13.09:22:13.480 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-11-13.09:30:58.678 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 672 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
-24-11-13.09:30:58.680 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
-24-11-13.09:31:05.144 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 7.41 seconds (JVM running for 10.404)
-24-11-13.09:31:05.711 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-11-13.09:31:06.253 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-11-13.09:31:06.928 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
-24-11-13.09:31:06.932 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"6840430710511973","payUrl":"暂无"}
-24-11-13.09:31:06.962 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-11-13.09:31:06.999 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-11-13.09:44:54.217 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 21908 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
-24-11-13.09:44:54.219 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
-24-11-13.09:45:01.006 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 7.67 seconds (JVM running for 10.207)
-24-11-13.09:45:01.772 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-11-13.09:45:02.302 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-11-13.09:45:03.032 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
-24-11-13.09:45:03.037 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"7082155628451124","payUrl":"暂无"}
-24-11-13.09:45:03.069 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-11-13.09:45:03.129 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-11-13.09:49:53.115 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 2076 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
-24-11-13.09:49:53.117 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
-24-11-13.09:49:58.088 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 5.711 seconds (JVM running for 8.118)
-24-11-13.09:49:58.696 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-11-13.09:49:59.199 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-11-13.09:49:59.732 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
-24-11-13.09:49:59.737 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"9330837155516058","payUrl":"暂无"}
-24-11-13.09:49:59.755 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-11-13.09:49:59.790 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-11-13.09:57:55.990 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 9264 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
-24-11-13.09:57:55.992 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
-24-11-13.09:58:01.562 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 6.23 seconds (JVM running for 7.609)
-24-11-13.09:58:02.248 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-11-13.09:58:02.850 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-11-13.09:58:03.351 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
-24-11-13.09:58:03.356 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"5711563811822772","payUrl":"暂无"}
-24-11-13.09:58:03.378 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-11-13.09:58:03.422 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-24-11-13.09:58:42.608 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 31776 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
-24-11-13.09:58:42.610 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
-24-11-13.09:58:48.178 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 6.141 seconds (JVM running for 7.476)
-24-11-13.09:58:48.805 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-24-11-13.09:58:49.410 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-24-11-13.09:58:50.041 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
-24-11-13.09:58:50.045 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"4629008926533317","payUrl":"暂无"}
-24-11-13.09:58:50.067 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-24-11-13.09:58:50.103 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-21.15:14:37.084 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 21268 (started by zqiusu in D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller)
+24-11-21.15:14:37.086 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-21.15:14:42.099 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 5.723 seconds (JVM running for 7.872)
+24-11-21.15:14:42.787 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-21.15:14:48.477 [main            ] ERROR HikariPool             - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:903)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy74.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy75.queryUnPayOrder(Unknown Source)
+	at org.example.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:49)
+	at org.example.test.service.OrderServiceTest.test_createOrder(OrderServiceTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: com.mysql.cj.exceptions.CJException: Unknown database 's_pay_mall'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:129)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:794)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:719)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:687)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:136)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:469)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:174)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1350)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:157)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:847)
+	... 72 common frames omitted
+24-11-21.15:34:34.717 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 6364 (started by zqiusu in D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller)
+24-11-21.15:34:34.719 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-21.15:34:39.767 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 5.787 seconds (JVM running for 7.519)
+24-11-21.15:34:40.205 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-21.15:34:45.760 [main            ] ERROR HikariPool             - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:903)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy74.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy75.queryUnPayOrder(Unknown Source)
+	at org.example.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:49)
+	at org.example.test.service.OrderServiceTest.test_createOrder(OrderServiceTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: com.mysql.cj.exceptions.CJException: Unknown database 's_pay_mall'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:129)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:794)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:719)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:687)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:136)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:469)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:174)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1350)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:157)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:847)
+	... 72 common frames omitted
+24-11-21.15:38:07.952 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 21756 (started by zqiusu in D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller)
+24-11-21.15:38:07.954 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-21.15:38:12.032 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.895 seconds (JVM running for 6.524)
+24-11-21.15:38:12.393 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-21.15:38:12.779 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-21.15:38:13.171 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-21.15:38:13.200 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-21.15:53:03.462 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 19360 (started by zqiusu in D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller)
+24-11-21.15:53:03.464 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-21.15:53:08.905 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 6.157 seconds (JVM running for 8.443)
+24-11-21.15:53:09.426 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-21.15:53:09.950 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-21.15:53:10.025 [main            ] INFO  OrderServiceImpl       - 创建订单-存在，存在未创建支付单订单，创建支付单开始 userId:wyc productId:10003 orderId:2667565124524257
+24-11-21.15:53:10.653 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-21.15:53:10.685 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-21.16:05:29.051 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 11516 (started by zqiusu in D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller)
+24-11-21.16:05:29.065 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-21.16:05:33.524 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 5.21 seconds (JVM running for 6.91)
+24-11-21.16:05:33.959 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-21.16:05:34.424 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-21.16:05:34.479 [main            ] INFO  OrderServiceImpl       - 创建订单-存在，存在未创建支付单订单，创建支付单开始 userId:wyc productId:10003 orderId:2667565124524257
+24-11-21.16:05:34.857 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-21.16:05:34.890 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-21.16:05:55.774 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 19824 (started by zqiusu in D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller)
+24-11-21.16:05:55.776 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-21.16:05:59.717 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.631 seconds (JVM running for 6.083)
+24-11-21.16:06:00.208 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-21.16:06:00.534 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-21.16:06:00.588 [main            ] INFO  OrderServiceImpl       - 创建订单-存在，存在未创建支付单订单，创建支付单开始 userId:wyc productId:10003 orderId:2667565124524257
+24-11-21.16:41:33.632 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m3s78ms416µs).
+24-11-21.16:41:34.032 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-21.16:41:34.134 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-21.16:41:42.782 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 19352 (started by zqiusu in D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller)
+24-11-21.16:41:42.784 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-21.16:41:48.563 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 6.656 seconds (JVM running for 8.49)
+24-11-21.16:41:49.129 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-21.16:41:49.583 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-21.16:42:43.527 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s221ms360µs300ns).
+24-11-21.16:43:42.374 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s851ms270µs200ns).
+24-11-21.17:11:52.588 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m10s210ms792µs200ns).
+24-11-21.17:11:52.942 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-21.17:11:53.024 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-21.17:13:33.838 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 19044 (started by zqiusu in D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller)
+24-11-21.17:13:33.839 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-21.17:13:38.000 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.667 seconds (JVM running for 5.809)
+24-11-21.17:13:38.400 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-21.17:13:38.778 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-21.17:13:38.827 [main            ] INFO  OrderServiceImpl       - 创建订单-存在，存在未创建支付单订单，创建支付单开始 userId:wyc productId:10003 orderId:0855550242363373
+24-11-21.17:13:39.186 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-21.17:13:39.220 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-21.17:14:50.158 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 9660 (started by zqiusu in D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller)
+24-11-21.17:14:50.158 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-21.17:14:53.766 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.212 seconds (JVM running for 5.419)
+24-11-21.17:14:54.121 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-21.17:14:54.412 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-21.17:14:54.479 [main            ] INFO  OrderServiceImpl       - 创建订单-存在，存在未创建支付单订单，创建支付单开始 userId:wyc productId:10003 orderId:0855550242363373
+24-11-21.17:14:54.744 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-21.17:14:54.787 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-21.17:17:42.595 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 19516 (started by zqiusu in D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller)
+24-11-21.17:17:42.597 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-21.17:17:45.857 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 3.816 seconds (JVM running for 4.998)
+24-11-21.17:17:46.122 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-21.17:17:46.496 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-21.17:17:46.567 [main            ] INFO  OrderServiceImpl       - 创建订单-存在，存在未创建支付单订单，创建支付单开始 userId:wyc productId:10003 orderId:0855550242363373
+24-11-21.17:17:46.838 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-21.17:17:46.871 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-21.17:18:59.394 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 17564 (started by zqiusu in D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller)
+24-11-21.17:18:59.396 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-21.17:19:03.472 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.691 seconds (JVM running for 6.082)
+24-11-21.17:19:03.864 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-21.17:19:04.430 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-21.17:19:04.487 [main            ] INFO  OrderServiceImpl       - 创建订单-存在，存在未创建支付单订单，创建支付单开始 userId:wyc productId:10003 orderId:0855550242363373
+24-11-21.17:36:52.113 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m47s539ms288µs400ns).
+24-11-21.17:36:52.293 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-21.17:36:52.395 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-21.17:36:56.984 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 6948 (started by zqiusu in D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller)
+24-11-21.17:36:56.986 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-21.17:37:01.181 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.884 seconds (JVM running for 6.375)
+24-11-21.17:37:01.574 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-21.17:37:01.951 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-21.17:38:14.530 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m42s579ms544µs800ns).
+24-11-21.17:40:35.951 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m21s421ms42µs500ns).
+24-11-21.17:40:35.989 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-21.17:40:36.025 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-21.17:40:40.091 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 22376 (started by zqiusu in D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller)
+24-11-21.17:40:40.092 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-21.17:40:45.511 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 6.114 seconds (JVM running for 7.464)
+24-11-21.17:40:46.119 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-21.17:40:46.754 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-21.17:53:32.062 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m54s794ms237µs600ns).
+24-11-21.17:53:32.155 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-21.17:53:32.233 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-21.17:53:36.673 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 15244 (started by zqiusu in D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller)
+24-11-21.17:53:36.674 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-21.17:53:40.234 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.16 seconds (JVM running for 5.392)
+24-11-21.17:53:40.542 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-21.17:53:40.866 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-21.17:53:40.916 [main            ] INFO  OrderServiceImpl       - 创建订单-存在，存在未创建支付单订单，创建支付单开始 userId:wyc productId:10003 orderId:3321143248682339
+24-11-21.17:53:41.263 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-21.17:53:41.298 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

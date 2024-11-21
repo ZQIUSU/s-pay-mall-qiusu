@@ -1,0 +1,81 @@
+24-11-13.08:51:20.563 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 18668 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
+24-11-13.08:51:20.566 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-13.08:51:27.220 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 7.422 seconds (JVM running for 10.389)
+24-11-13.08:51:27.818 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-13.08:51:28.489 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-13.08:51:29.001 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
+24-11-13.08:51:29.005 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"8716380686752619","payUrl":"暂无"}
+24-11-13.08:51:29.060 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-13.08:51:29.129 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-13.09:03:40.332 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 23244 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
+24-11-13.09:03:40.334 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-13.09:03:45.873 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 6.304 seconds (JVM running for 9.106)
+24-11-13.09:03:46.382 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-13.09:03:46.860 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-13.09:03:47.393 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
+24-11-13.09:03:47.397 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"9177123634389257","payUrl":"暂无"}
+24-11-13.09:03:47.427 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-13.09:03:47.474 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-13.09:19:02.149 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 20972 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
+24-11-13.09:19:02.150 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-13.09:19:07.634 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 6.299 seconds (JVM running for 9.105)
+24-11-13.09:19:08.094 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-13.09:19:08.764 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-13.09:19:09.428 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
+24-11-13.09:19:09.436 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"7226443183849785","payUrl":"暂无"}
+24-11-13.09:19:09.465 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-13.09:19:09.504 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-13.09:22:08.224 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 13112 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
+24-11-13.09:22:08.225 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-13.09:22:12.295 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 4.932 seconds (JVM running for 6.373)
+24-11-13.09:22:12.606 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-13.09:22:12.993 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-13.09:22:13.409 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
+24-11-13.09:22:13.429 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"0542844319086421","payUrl":"暂无"}
+24-11-13.09:22:13.445 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-13.09:22:13.480 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-13.09:30:58.678 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 672 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
+24-11-13.09:30:58.680 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-13.09:31:05.144 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 7.41 seconds (JVM running for 10.404)
+24-11-13.09:31:05.711 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-13.09:31:06.253 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-13.09:31:06.928 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
+24-11-13.09:31:06.932 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"6840430710511973","payUrl":"暂无"}
+24-11-13.09:31:06.962 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-13.09:31:06.999 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-13.09:44:54.217 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 21908 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
+24-11-13.09:44:54.219 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-13.09:45:01.006 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 7.67 seconds (JVM running for 10.207)
+24-11-13.09:45:01.772 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-13.09:45:02.302 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-13.09:45:03.032 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
+24-11-13.09:45:03.037 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"7082155628451124","payUrl":"暂无"}
+24-11-13.09:45:03.069 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-13.09:45:03.129 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-13.09:49:53.115 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 2076 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
+24-11-13.09:49:53.117 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-13.09:49:58.088 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 5.711 seconds (JVM running for 8.118)
+24-11-13.09:49:58.696 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-13.09:49:59.199 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-13.09:49:59.732 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
+24-11-13.09:49:59.737 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"9330837155516058","payUrl":"暂无"}
+24-11-13.09:49:59.755 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-13.09:49:59.790 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-13.09:57:55.990 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 9264 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
+24-11-13.09:57:55.992 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-13.09:58:01.562 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 6.23 seconds (JVM running for 7.609)
+24-11-13.09:58:02.248 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-13.09:58:02.850 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-13.09:58:03.351 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
+24-11-13.09:58:03.356 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"5711563811822772","payUrl":"暂无"}
+24-11-13.09:58:03.378 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-13.09:58:03.422 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-13.09:58:42.608 [main            ] INFO  OrderServiceTest       - Starting OrderServiceTest using Java 1.8.0_412 on DESKTOP-65RJJEF with PID 31776 (started by 24409 in D:\workspace\s-pay-mall-zqiusu\s-pay-mall-controller)
+24-11-13.09:58:42.610 [main            ] INFO  OrderServiceTest       - The following 1 profile is active: "dev"
+24-11-13.09:58:48.178 [main            ] INFO  OrderServiceTest       - Started OrderServiceTest in 6.141 seconds (JVM running for 7.476)
+24-11-13.09:58:48.805 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-13.09:58:49.410 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-13.09:58:50.041 [main            ] INFO  OrderServiceTest       - 请求参数:{"productId":"10003","userId":"wyc"}
+24-11-13.09:58:50.045 [main            ] INFO  OrderServiceTest       - 测试结果:{"orderId":"4629008926533317","payUrl":"暂无"}
+24-11-13.09:58:50.067 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-13.09:58:50.103 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
