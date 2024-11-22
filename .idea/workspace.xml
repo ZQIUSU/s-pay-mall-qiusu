@@ -4,21 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2142db00-b157-4522-a4df-95eb6f4b0a9c" name="Changes" comment="day05:支付订单开发">
-      <change afterPath="$PROJECT_DIR$/data/log/log-error-2024-11-20.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/log/log-info-2024-11-20.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s-pay-mall-controller/data/log/log-error-2024-11-20.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s-pay-mall-controller/data/log/log-info-2024-11-20.0.log" afterDir="false" />
+    <list default="true" id="2142db00-b157-4522-a4df-95eb6f4b0a9c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data/log/log-error-2024-11-21.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/log/log-info-2024-11-21.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/font/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-controller/data/log/log-error-2024-11-21.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-controller/data/log/log-info-2024-11-21.0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log/log-error-2024-11-11.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log/log-error-2024-11-12.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log/log-info-2024-11-04.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log/log-error-2024-11-14.0.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s-pay-mall-common/src/main/java/org/example/common/weixin/MessageTextEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-common/src/main/java/org/example/common/weixin/MessageTextEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/s-pay-mall-controller/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-controller/data/log/log_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/s-pay-mall-controller/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-controller/data/log/log_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-controller/src/main/java/org/example/config/AliPayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-controller/src/main/java/org/example/config/AliPayConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/s-pay-mall-controller/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-controller/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-service/src/main/java/org/example/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-service/src/main/java/org/example/service/impl/OrderServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +32,7 @@
         <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -48,14 +50,17 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\Software\maven\apache-maven-3.8.1\maven-resolver-provider\src\main\java\org\apache\maven\repository" />
-        <option name="userSettingsFile" value="D:\Software\maven\apache-maven-3.8.1\apache-maven\src\conf\settings.xml" />
+        <option name="localRepository" value="C:\Users\zqiusu\.m2\repository" />
+        <option name="userSettingsFile" value="D:\Software\apache-maven-3.9.9-bin\apache-maven-3.9.9\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2nYObPYQMM4sVxAm77BjSlowBu5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -68,28 +73,34 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.OrderServiceTest.test_createOrder.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "20241113-zqiusu-pay",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "temurin-1.8",
-    "last_opened_file_path": "D:/Workspace/s-pay-mall-qiusu",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Workspace/s-pay-mall-mvc",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings",
     "spring.configuration.checksum": "1d101750104eae74b2aeb8451d6d73af",
-    "vue.rearranger.settings.migration": "true"
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.Application.executor": "Run"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -116,7 +127,20 @@
       <recent name="org.example.config" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrderServiceTest.test_createOrder">
+  <component name="RunManager" selected="应用程序.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Application" />
+      <module name="s-pay-mall-controller" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderServiceTest.test_createOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="s-pay-mall-controller" />
       <extension name="coverage">
@@ -148,11 +172,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Application" />
         <item itemvalue="JUnit.OrderServiceTest.test_createOrder" />
-        <item itemvalue="Spring Boot.Application" />
-        <item itemvalue="Spring Boot.Application" />
-        <item itemvalue="Spring Boot.Application" />
-        <item itemvalue="Spring Boot.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +214,7 @@
       <workItem from="1731577835264" duration="538000" />
       <workItem from="1731631353440" duration="1557000" />
       <workItem from="1732168503356" duration="8574000" />
-      <workItem from="1732180325310" duration="2479000" />
+      <workItem from="1732180325310" duration="2777000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1729215116580</created>
@@ -272,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1731578374974</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="day05:支付回调">
+      <created>1732183079656</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1732183079656</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +336,8 @@
     <MESSAGE value="day02:微信公众号验签" />
     <MESSAGE value="day03:登录界面开发" />
     <MESSAGE value="day05:支付订单开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="day05:支付订单开发" />
+    <MESSAGE value="day05:支付回调" />
+    <option name="LAST_COMMIT_MESSAGE" value="day05:支付回调" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -319,26 +348,12 @@
           <properties field="weixinAccessToken" class="org.example.service.impl.WeixinLoginServiceImpl" />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/s-pay-mall-service/src/main/java/org/example/service/impl/OrderServiceImpl.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/s-pay-mall-service/src/main/java/org/example/service/impl/OrderServiceImpl.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/s-pay-mall-service/src/main/java/org/example/service/impl/OrderServiceImpl.java</url>
-          <line>87</line>
-          <properties class="org.example.service.impl.OrderServiceImpl" method="doPrepayOrder">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="request.returnUrl" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

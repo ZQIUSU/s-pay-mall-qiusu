@@ -98,7 +98,7 @@ public class OrderServiceImpl implements IOrderService {
         request.setBizContent(bizContent.toString());
 
         String form = alipayClient.pageExecute(request).getBody();
-
+        log.info(form);
         PayOrder payOrder = new PayOrder();
         payOrder.setOrderId(orderId);
         payOrder.setPayUrl(form);

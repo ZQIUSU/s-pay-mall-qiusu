@@ -15,9 +15,9 @@ public class AliPayConfig {
                 properties.getGatewayUrl(),
                 properties.getApp_id(),
                 properties.getMerchant_private_key(),
-                properties.getAlipay_public_key(),
                 properties.getFormat(),
                 properties.getCharset(),
+                properties.getAlipay_public_key(),
                 properties.getSign_type());
     }
 

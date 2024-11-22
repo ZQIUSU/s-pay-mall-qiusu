@@ -1,0 +1,153 @@
+24-11-21.14:04:47.938 [main            ] INFO  Application            - Starting Application using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 11004 (D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller\target\classes started by zqiusu in D:\Workspace\s-pay-mall-qiusu)
+24-11-21.14:04:47.942 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-11-21.14:04:49.286 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+24-11-21.14:04:49.295 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+24-11-21.14:04:49.296 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-11-21.14:04:49.296 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-11-21.14:04:50.135 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-11-21.14:04:50.135 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2138 ms
+24-11-21.14:04:51.676 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+24-11-21.14:04:51.702 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+24-11-21.14:04:51.713 [main            ] INFO  Application            - Started Application in 4.477 seconds (JVM running for 9.08)
+24-11-21.14:46:43.345 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-11-21.14:46:43.349 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-11-21.14:46:43.380 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 31 ms
+24-11-21.14:46:44.684 [http-nio-8080-exec-1] INFO  LoginController        - 生成微信扫码登录 ticket:gQFX8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyWVJFbDhObzBmQUcxbGpBQ2hEMXgAAgRT1z5nAwQAjScA
+24-11-21.14:47:09.956 [http-nio-8080-exec-3] INFO  LoginController        - 扫码检测登录结果 ticket:"gQFX8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyWVJFbDhObzBmQUcxbGpBQ2hEMXgAAgRT1z5nAwQAjScA" openidToken:null
+24-11-21.14:47:25.879 [http-nio-8080-exec-7] INFO  Http11Processor        - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xf30x010x000x000xef0x030x03d60xd80x0fp0xa80xde0x850x020x96<0xdf0x080xb00xeb0xf60xc00x8be?60x0d0xe50x170xca10xc80xb90xe3=0xf90xac ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:263)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+24-11-21.14:52:47.211 [http-nio-8080-exec-9] INFO  WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU开始 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1732171965</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[100601]]></EventKey>
+<Ticket><![CDATA[gQFX8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyWVJFbDhObzBmQUcxbGpBQ2hEMXgAAgRT1z5nAwQAjScA]]></Ticket>
+</xml>
+24-11-21.14:52:48.745 [http-nio-8080-exec-2] INFO  WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU开始 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1732171967</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[TEMPLATESENDJOBFINISH]]></Event>
+<MsgID>3734267637258584066</MsgID>
+<Status><![CDATA[success]]></Status>
+</xml>
+24-11-21.14:53:50.405 [http-nio-8080-exec-3] INFO  WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU开始 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1732172028</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[1]]></Content>
+<MsgId>24798739435923560</MsgId>
+</xml>
+24-11-21.14:53:50.429 [http-nio-8080-exec-3] ERROR WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU失败 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1732172028</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[1]]></Content>
+<MsgId>24798739435923560</MsgId>
+</xml>
+com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter$UnknownFieldException: No such field org.example.common.weixin.MessageTextEntity.MsgId
+---- Debugging information ----
+message             : No such field org.example.common.weixin.MessageTextEntity.MsgId
+field               : MsgId
+class               : org.example.common.weixin.MessageTextEntity
+required-type       : org.example.common.weixin.MessageTextEntity
+converter-type      : com.thoughtworks.xstream.converters.reflection.ReflectionConverter
+version             : 1.4.10
+-------------------------------
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.handleUnknownField(AbstractReflectionConverter.java:524)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.doUnmarshal(AbstractReflectionConverter.java:375)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.unmarshal(AbstractReflectionConverter.java:281)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:134)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1486)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1466)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1337)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1328)
+	at org.example.common.weixin.XmlUtil.xmlToBean(XmlUtil.java:148)
+	at org.example.controller.WeixinPortalController.post(WeixinPortalController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+24-11-21.14:54:23.969 [main            ] INFO  Application            - Starting Application using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 15616 (D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller\target\classes started by zqiusu in D:\Workspace\s-pay-mall-qiusu)
+24-11-21.14:54:23.971 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-11-21.14:54:25.132 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+24-11-21.14:54:25.141 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+24-11-21.14:54:25.142 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-11-21.14:54:25.142 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-11-21.14:54:25.331 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-11-21.14:54:25.332 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1318 ms
+24-11-21.14:54:26.681 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+24-11-21.14:54:26.701 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+24-11-21.14:54:26.711 [main            ] INFO  Application            - Started Application in 3.402 seconds (JVM running for 4.515)
+24-11-21.14:54:29.158 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-11-21.14:54:29.159 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-11-21.14:54:29.159 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-11-21.14:54:29.198 [http-nio-8080-exec-1] INFO  WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU开始 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1732172067</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[1]]></Content>
+<MsgId>24798740501144678</MsgId>
+</xml>
