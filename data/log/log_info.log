@@ -53,3 +53,223 @@
 24-11-22.17:43:21.007 [http-nio-8080-exec-4] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:10001 productId:100001 orderId:3607395419272365
 24-11-22.17:49:46.706 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 24-11-22.17:49:46.773 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-25.11:56:10.653 [main            ] INFO  Application            - Starting Application using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 14500 (D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller\target\classes started by zqiusu in D:\Workspace\s-pay-mall-qiusu)
+24-11-25.11:56:10.657 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-11-25.11:56:12.814 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+24-11-25.11:56:12.827 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+24-11-25.11:56:12.827 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-11-25.11:56:12.827 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-11-25.11:56:13.028 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-11-25.11:56:13.028 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2295 ms
+24-11-25.11:56:14.934 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+24-11-25.11:56:14.939 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+24-11-25.11:56:14.944 [main            ] INFO  Http11NioProtocol      - Pausing ProtocolHandler ["http-nio-8080"]
+24-11-25.11:56:14.944 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-11-25.11:56:14.949 [main            ] INFO  Http11NioProtocol      - Stopping ProtocolHandler ["http-nio-8080"]
+24-11-25.11:56:14.949 [main            ] INFO  Http11NioProtocol      - Destroying ProtocolHandler ["http-nio-8080"]
+24-11-25.11:56:14.959 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-11-25.11:56:14.992 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+24-11-25.11:56:51.103 [main            ] INFO  Application            - Starting Application using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 27460 (D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller\target\classes started by zqiusu in D:\Workspace\s-pay-mall-qiusu)
+24-11-25.11:56:51.105 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-11-25.11:56:52.775 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+24-11-25.11:56:52.785 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+24-11-25.11:56:52.786 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-11-25.11:56:52.786 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-11-25.11:56:52.952 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-11-25.11:56:52.953 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1778 ms
+24-11-25.11:56:54.431 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+24-11-25.11:56:54.454 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+24-11-25.11:56:54.464 [main            ] INFO  Application            - Started Application in 4.099 seconds (JVM running for 4.704)
+24-11-25.11:56:58.729 [http-nio-8080-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-11-25.11:56:58.729 [http-nio-8080-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-11-25.11:56:58.730 [http-nio-8080-exec-2] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-11-25.11:56:58.770 [http-nio-8080-exec-2] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'ticket' for method parameter type String is not present]
+24-11-25.11:58:28.948 [http-nio-8080-exec-1] INFO  LoginController        - 生成微信扫码登录 ticket:gQG68DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyNDRmdTlmbzBmQUcxcngySHhEMUoAAgTh9UNnAwQAjScA
+24-11-25.14:06:40.149 [main            ] INFO  Application            - Starting Application using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 17256 (D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller\target\classes started by zqiusu in D:\Workspace\s-pay-mall-qiusu)
+24-11-25.14:06:40.152 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-11-25.14:06:42.476 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+24-11-25.14:06:42.487 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+24-11-25.14:06:42.487 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-11-25.14:06:42.488 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-11-25.14:06:43.410 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-11-25.14:06:43.411 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3182 ms
+24-11-25.14:06:45.477 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+24-11-25.14:06:45.510 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+24-11-25.14:06:45.533 [main            ] INFO  Application            - Started Application in 6.197 seconds (JVM running for 11.111)
+24-11-25.14:06:54.037 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-11-25.14:06:54.038 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-11-25.14:06:54.039 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-11-25.14:06:54.081 [http-nio-8080-exec-1] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'ticket' for method parameter type String is not present]
+24-11-25.14:07:42.671 [http-nio-8080-exec-3] INFO  LoginController        - 生成微信扫码登录 ticket:gQFM8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyeGYwTDg1bzBmQUcxb0h4SHhEMVYAAgQrFERnAwQAjScA
+24-11-25.14:07:55.537 [http-nio-8080-exec-2] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'ticket' for method parameter type String is not present]
+24-11-25.14:08:08.524 [http-nio-8080-exec-4] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'ticket' for method parameter type String is not present]
+24-11-25.14:08:23.948 [http-nio-8080-exec-5] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'ticket' for method parameter type String is not present]
+24-11-25.14:08:57.248 [http-nio-8080-exec-7] INFO  LoginController        - 扫码检测登录结果 ticket:gQFM8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyeGYwTDg1bzBmQUcxb0h4SHhEMVYAAgQrFERnAwQAjScA openidToken:null
+24-11-25.14:09:59.602 [http-nio-8080-exec-10] INFO  LoginController        - 扫码检测登录结果 ticket:gQFM8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyeGYwTDg1bzBmQUcxb0h4SHhEMVYAAgQrFERnAwQAjScA openidToken:null
+24-11-25.14:15:32.640 [http-nio-8080-exec-2] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:zahngzhipeng productId:zahngzhipeng
+24-11-25.14:15:32.711 [http-nio-8080-exec-2] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-25.14:15:33.181 [http-nio-8080-exec-2] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-25.14:15:33.924 [http-nio-8080-exec-2] INFO  OrderServiceImpl       - <form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=kZYeAh6XgJUP47AF0pY2Fpf4oKCHxh1Nxg8m7SXU%2BGTrhe9Z942q24KaWfuQQecnr74qIDjgH1HZq0s3HKCLhW60V19x3CBo4%2BILrrjFC8DlUqDVnszK%2FkpaNwjxpuxI34z743DTxUjvLJ6ZE9T7fFiRuktJotBnDcSN9WUYjHazVUwHZ2pMk%2BMCSxR54pay8bQ3roxnUkrADC5l%2BA7ffeFwVnGRUhgRWbFKu2%2Fb5EFkxQB0S5FFN9kSQtNu5tz%2F9nweKR35c9grSTgK2RnrbSVkN1Ly86i7wzYYG8YfpynqByZPXgxdbzEsDe3UB4QEXMzuws8lsCIMXskBpPmaSg%3D%3D&return_url=https%3A%2F%2Fgaga.plus&notify_url=http%3A%2F%2Fzqiusu-studio.natapp1.cc%2Fapi%2Fv1%2Falipay%2Fpay_notify&version=1.0&app_id=9021000141622405&sign_type=RSA2&timestamp=2024-11-25+14%3A15%3A33&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;5350167757057980&quot;,&quot;total_amount&quot;:&quot;1.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+24-11-25.14:15:33.940 [http-nio-8080-exec-2] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:zahngzhipeng productId:20001223 orderId:5350167757057980
+24-11-25.14:25:57.981 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-11-25.14:25:58.038 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-11-25.14:26:01.794 [main            ] INFO  Application            - Starting Application using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 6164 (D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller\target\classes started by zqiusu in D:\Workspace\s-pay-mall-qiusu)
+24-11-25.14:26:01.797 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-11-25.14:26:03.722 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+24-11-25.14:26:03.733 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+24-11-25.14:26:03.733 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-11-25.14:26:03.733 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-11-25.14:26:03.952 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-11-25.14:26:03.953 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2087 ms
+24-11-25.14:26:05.572 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+24-11-25.14:26:05.603 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+24-11-25.14:26:05.616 [main            ] INFO  Application            - Started Application in 4.653 seconds (JVM running for 5.339)
+24-11-25.14:28:38.526 [http-nio-8080-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-11-25.14:28:38.526 [http-nio-8080-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-11-25.14:28:38.527 [http-nio-8080-exec-2] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-11-25.14:28:38.636 [http-nio-8080-exec-2] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:wangyichun productId:wangyichun
+24-11-25.14:28:38.662 [http-nio-8080-exec-2] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-11-25.14:28:39.064 [http-nio-8080-exec-2] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-11-25.14:28:39.468 [http-nio-8080-exec-2] INFO  OrderServiceImpl       - <form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=CIblz%2BvHVDojtMSns83ZZ9l3IIdVlnqYT6t1s9WhL%2FzMdPvtJWXp5uTmRPAR0Sx4k7E3LFptoumy6fmvIo3p0amyel%2FQXg2zYCj3f7GuTr%2FPzN1YOiC5fnANS3%2BSlEsKDZDxFZjAdlOtOuxU83o3w3Nh6IHCO00s3fV%2BJh%2BW2fY5mxJsOjNXaGtBf84OXxREG40P9ofJqkG133e1QsBlfgvhkJz3x1H7PogEd1gO42%2BcqvX%2Bfce5woB1J0A958TMKskpcMeWENrbp5yqob39avRo2zjqWvIQmIvp7UFhiHjBnxKuwzeRlFLScPv6GvT1E0ashU9ak70Z95le1VXDIg%3D%3D&return_url=https%3A%2F%2Fgaga.plus&notify_url=http%3A%2F%2Fzqiusu-studio.natapp1.cc%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000141622405&sign_type=RSA2&timestamp=2024-11-25+14%3A28%3A39&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;9547956157674463&quot;,&quot;total_amount&quot;:&quot;1.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+24-11-25.14:28:39.481 [http-nio-8080-exec-2] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:wangyichun productId:20010720 orderId:9547956157674463
+24-11-25.14:55:43.886 [http-nio-8080-exec-4] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:wangyichun productId:wangyichun
+24-11-25.14:55:43.929 [http-nio-8080-exec-4] INFO  OrderServiceImpl       - 创建订单-存在，已存在未支付订单。userId:wangyichun productId:20010720 orderId:9547956157674463
+24-11-25.14:55:43.929 [http-nio-8080-exec-4] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:wangyichun productId:20010720 orderId:9547956157674463
+24-11-25.14:57:07.628 [http-nio-8080-exec-8] INFO  AliPayController       - 商品下单，根据商品ID创建支付单开始 userId:hhaha productId:hhaha
+24-11-25.14:57:07.696 [http-nio-8080-exec-8] INFO  OrderServiceImpl       - <form name="punchout_form" method="post" action="https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.page.pay&sign=AmUIyNVjE3AaBWoVsWAgiG3GCKL7hzIV5acngyyaHzSabjXsBU8HwnCCQGKE8oFv46ubIxENCS0F9MbbbPvyxpl%2BPf25VBSRsW%2FzXLKA8IKs428WjcvMFLy%2BMo%2By8CMtG279tpMynrPuA%2BPHVQLZOnKp7CGm7ikWX0M3s5Z%2FeyhVtEaqisHKT%2FulJVYbLSMPanymOXTI0RyvKSBch1E75otHFP8uq%2FWKAKbxvaz83hHf5ABkf2qCw%2BPp5hJWfwz%2Fg2dyhlvBymc1KeEgfa%2FIyMI0raPQZfOLznZI8q0XNW0nWiNtrL2hoHcEvi3i7zdZ8fffp%2Ff0NVfPNAQ%2FRaUvCg%3D%3D&return_url=https%3A%2F%2Fgaga.plus&notify_url=http%3A%2F%2Fzqiusu-studio.natapp1.cc%2Fapi%2Fv1%2Falipay%2Falipay_notify_url&version=1.0&app_id=9021000141622405&sign_type=RSA2&timestamp=2024-11-25+14%3A57%3A07&alipay_sdk=alipay-sdk-java-4.38.157.ALL&format=json">
+<input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;2435155524402567&quot;,&quot;total_amount&quot;:&quot;1.68&quot;,&quot;subject&quot;:&quot;测试商品&quot;,&quot;product_code&quot;:&quot;FAST_INSTANT_TRADE_PAY&quot;}">
+<input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+24-11-25.14:57:07.712 [http-nio-8080-exec-8] INFO  AliPayController       - 商品下单，根据商品ID创建支付单完成 userId:hhaha productId:1000001 orderId:2435155524402567
+24-11-25.14:57:58.229 [http-nio-8080-exec-9] INFO  AliPayController       - 支付回调，消息接收 TRADE_SUCCESS
+24-11-25.14:57:58.238 [http-nio-8080-exec-9] INFO  AliPayController       - 支付回调，交易名称: 测试商品
+24-11-25.14:57:58.238 [http-nio-8080-exec-9] INFO  AliPayController       - 支付回调，交易状态: TRADE_SUCCESS
+24-11-25.14:57:58.238 [http-nio-8080-exec-9] INFO  AliPayController       - 支付回调，支付宝交易凭证号: 2024112522001432440504066912
+24-11-25.14:57:58.238 [http-nio-8080-exec-9] INFO  AliPayController       - 支付回调，商户订单号: 2435155524402567
+24-11-25.14:57:58.238 [http-nio-8080-exec-9] INFO  AliPayController       - 支付回调，交易金额: 1.68
+24-11-25.14:57:58.238 [http-nio-8080-exec-9] INFO  AliPayController       - 支付回调，买家在支付宝唯一id: 2088722046932445
+24-11-25.14:57:58.238 [http-nio-8080-exec-9] INFO  AliPayController       - 支付回调，买家付款时间: 2024-11-25 14:57:53
+24-11-25.14:57:58.238 [http-nio-8080-exec-9] INFO  AliPayController       - 支付回调，买家付款金额: 1.68
+24-11-25.14:57:58.238 [http-nio-8080-exec-9] INFO  AliPayController       - 支付回调，支付回调，更新订单 2435155524402567
+24-11-25.14:57:58.397 [http-nio-8080-exec-9] INFO  OrderPaySuccessListener - 收到支付成功回调 {"orderId":"2435155524402567","status":"PAY_SUCCESS"}
+24-11-25.15:00:34.216 [http-nio-8080-exec-2] INFO  WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU开始 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1732518029</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[SCAN]]></Event>
+<EventKey><![CDATA[100601]]></EventKey>
+<Ticket><![CDATA[gQFM8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyeGYwTDg1bzBmQUcxb0h4SHhEMVYAAgQrFERnAwQAjScA]]></Ticket>
+</xml>
+24-11-25.15:00:36.536 [http-nio-8080-exec-4] INFO  WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU开始 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1732518033</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[TEMPLATESENDJOBFINISH]]></Event>
+<MsgID>3740073655519477760</MsgID>
+<Status><![CDATA[success]]></Status>
+</xml>
+24-11-25.15:00:36.548 [http-nio-8080-exec-4] ERROR WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU失败 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1732518033</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[TEMPLATESENDJOBFINISH]]></Event>
+<MsgID>3740073655519477760</MsgID>
+<Status><![CDATA[success]]></Status>
+</xml>
+com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter$UnknownFieldException: No such field org.example.common.weixin.MessageTextEntity.MsgID
+---- Debugging information ----
+message             : No such field org.example.common.weixin.MessageTextEntity.MsgID
+field               : MsgID
+class               : org.example.common.weixin.MessageTextEntity
+required-type       : org.example.common.weixin.MessageTextEntity
+converter-type      : com.thoughtworks.xstream.converters.reflection.ReflectionConverter
+version             : 1.4.10
+-------------------------------
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.handleUnknownField(AbstractReflectionConverter.java:524)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.doUnmarshal(AbstractReflectionConverter.java:375)
+	at com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter.unmarshal(AbstractReflectionConverter.java:281)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:72)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:66)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:50)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:134)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1486)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1466)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1337)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1328)
+	at org.example.common.weixin.XmlUtil.xmlToBean(XmlUtil.java:148)
+	at org.example.controller.WeixinPortalController.post(WeixinPortalController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
