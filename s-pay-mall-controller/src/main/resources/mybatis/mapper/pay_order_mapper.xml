@@ -47,14 +47,14 @@
         where order_id = #{orderId}
     </update>
 
-    <select id="queryTimeoutCloseOrderList" parameterType="java.lang.String">
+    <select id="queryTimeoutCloseOrderList" parameterType="java.lang.String" resultType="java.lang.String">
         select order_id as orderId from pay_order
         where status = 'PAY_WAIT' AND now()>=order_time + INTERVAL 30 MINUTE
         ORDER BY id ASC
         LIMIT 50
     </select>
     
-    <select id="queryNoPayNotifyOrder" parameterType="java.lang.String">
+    <select id="queryNoPayNotifyOrder" parameterType="java.lang.String" resultType="java.lang.String">
         select order_id as orderId from pay_order
         where status = 'PAY_WAIT' AND now()>=order_time + INTERVAL 1 MINUTE
         ORDER BY id ASC

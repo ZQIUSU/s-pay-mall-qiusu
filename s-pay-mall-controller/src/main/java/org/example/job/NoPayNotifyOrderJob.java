@@ -22,7 +22,7 @@ public class NoPayNotifyOrderJob {
     @Resource
     private AlipayClient alipayClient;
 
-    @Scheduled(cron = "0/3 * * * * ?")
+    @Scheduled(cron = "0/5 * * * * ?")
     public void exec() {
         try {
             log.info("任务；检测未接收到或未正确处理的支付回调通知");
@@ -41,9 +41,7 @@ public class NoPayNotifyOrderJob {
                 if ("10000".equals(code)) {
                     orderService.changeOrderPaySuccess(orderId);
                 }
-
             }
-
         }catch(Exception e){
             log.error("检测未接收到或未正确处理的支付回调通知失败", e);
 
