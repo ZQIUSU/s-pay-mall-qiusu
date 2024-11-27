@@ -29,7 +29,7 @@ services:
     container_name: phpmyadmin
     hostname: phpmyadmin
     ports:
-      - 8899:80
+      - "8899:80"
     environment:
       - PMA_HOST=mysql
       - PMA_PORT=3306
