@@ -32,7 +32,6 @@ services:
         max-file: "3"
     networks:
       - my-network
-      -
 networks:
   my-network:
     driver: bridge

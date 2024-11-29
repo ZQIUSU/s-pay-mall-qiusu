@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2142db00-b157-4522-a4df-95eb6f4b0a9c" name="Changes" comment="day07:部署">
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/conf.d/apis.zqiusu.tech.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/conf.d/front.zqiusu.tech.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/crt/zqiusu.site.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/crt/zqiusu.site.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/logs/access.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/logs/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/ssl/_.xiaofuge.tech.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/ssl/_.xiaofuge.tech.pem" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="20241126-zqiusu-docker" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -95,7 +84,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "20241126-zqiusu-docker",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "temurin-1.8",
     "kotlin-language-version-configured": "true",
