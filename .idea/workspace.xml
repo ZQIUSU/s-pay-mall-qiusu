@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2142db00-b157-4522-a4df-95eb6f4b0a9c" name="Changes" comment="day07:部署">
+    <list default="true" id="2142db00-b157-4522-a4df-95eb6f4b0a9c" name="Changes" comment="day08:部署">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment-aliyun.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment-aliyun.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/conf.d/apis.zqiusu.tech.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/conf.d/apis.zqiusu.tech.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/conf.d/front.zqiusu.tech.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/conf.d/front.zqiusu.tech.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-controller/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-controller/src/main/resources/application-prod.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,7 +341,39 @@
       <option name="project" value="LOCAL" />
       <updated>1732691909483</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="day08:部署">
+      <option name="closed" value="true" />
+      <created>1732867192178</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1732867192178</updated>
+    </task>
+    <task id="LOCAL-00017" summary="day08:部署">
+      <option name="closed" value="true" />
+      <created>1732867423503</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1732867423504</updated>
+    </task>
+    <task id="LOCAL-00018" summary="day08:部署">
+      <option name="closed" value="true" />
+      <created>1732868976275</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1732868976275</updated>
+    </task>
+    <task id="LOCAL-00019" summary="day08:部署">
+      <option name="closed" value="true" />
+      <created>1732870316887</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1732870316887</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +412,8 @@
     <MESSAGE value="day05:支付回调" />
     <MESSAGE value="day06:完成支付回调" />
     <MESSAGE value="day07:部署" />
-    <option name="LAST_COMMIT_MESSAGE" value="day07:部署" />
+    <MESSAGE value="day08:部署" />
+    <option name="LAST_COMMIT_MESSAGE" value="day08:部署" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
