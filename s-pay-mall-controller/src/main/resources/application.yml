@@ -2,4 +2,4 @@ spring:
   config:
     name: s-pay-mall-zqiusu
   profiles:
-    active: dev
+    active: prod

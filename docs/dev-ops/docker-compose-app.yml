@@ -3,8 +3,19 @@ version: '3.8'
 # docker-compose -f docker-compose-app.yml up -d
 # 你需要修改system为你自身系统的仓库名
 services:
+    # 部署前端项目
+  nginx:
+    image: nginx:1.25.1
+    container_name: nginx
+    restart: always
+    ports:
+      - '443:443'
+      - '80:80'
+    volumes:
+      - ./nginx/html:/usr/share/nginx/html
+    privileged: true
   s-pay-mall:
-    image: system/s-pay-mall-mvc:1.0
+    image: zqiusu/s-pay-mall-app:1.0
     container_name: s-pay-mall
     restart: on-failure
     ports:
@@ -19,3 +30,9 @@ services:
       options:
         max-size: "10m"
         max-file: "3"
+    networks:
+      - my-network
+      -
+networks:
+  my-network:
+    driver: bridge
