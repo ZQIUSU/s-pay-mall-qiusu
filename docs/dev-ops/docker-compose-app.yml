@@ -21,7 +21,7 @@ services:
       - my-network
 
   s-pay-mall:
-    image: zqiusu/s-pay-mallapp:1.0
+    image: zqiusu/s-pay-mall-app:1.0
     container_name: s-pay-mall
     restart: on-failure
     ports:

@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2142db00-b157-4522-a4df-95eb6f4b0a9c" name="Changes" comment="day08:部署">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment-aliyun.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment-aliyun.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/conf.d/apis.zqiusu.tech.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/conf.d/apis.zqiusu.tech.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/conf.d/front.zqiusu.tech.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/conf.d/front.zqiusu.tech.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s-pay-mall-controller/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-controller/src/main/resources/application-prod.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +89,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "temurin-1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Workspace/s-pay-mall-qiusu/docs/dev-ops",
+    "last_opened_file_path": "C:/Workspace/s-pay-mall-mvc",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -135,7 +129,7 @@
       <recent name="org.example.config" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Application">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Application" />
       <module name="s-pay-mall-controller" />
@@ -188,9 +182,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Application" />
         <item itemvalue="JUnit.OrderServiceTest.test_createOrder" />
-        <item itemvalue="Docker.s-pay-mall-controller/Dockerfile" />
       </list>
     </recent_temporary>
   </component>
