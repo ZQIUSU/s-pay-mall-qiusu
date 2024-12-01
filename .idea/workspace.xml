@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2142db00-b157-4522-a4df-95eb6f4b0a9c" name="Changes" comment="day08:部署">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/conf.d/apis.zqiusu.tech.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/conf.d/apis.zqiusu.tech.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/conf.d/front.zqiusu.tech.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/conf.d/front.zqiusu.tech.conf" afterDir="false" />
     </list>
@@ -445,7 +447,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733061687072</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="day08:部署">
+      <option name="closed" value="true" />
+      <created>1733061812693</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1733061812693</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
