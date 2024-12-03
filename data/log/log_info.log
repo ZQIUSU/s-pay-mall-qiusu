@@ -2083,3 +2083,50 @@ version             : 1.4.10
 24-12-02.17:31:55.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
 24-12-02.17:31:59.646 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 24-12-02.17:31:59.672 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-12-02.17:32:05.929 [main            ] INFO  Application            - Starting Application using Java 1.8.0_431 on DESKTOP-CBM2HV2 with PID 1456 (D:\Workspace\s-pay-mall-qiusu\s-pay-mall-controller\target\classes started by zqiusu in D:\Workspace\s-pay-mall-qiusu)
+24-12-02.17:32:05.932 [main            ] INFO  Application            - The following 1 profile is active: "prod"
+24-12-02.17:32:07.727 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+24-12-02.17:32:07.737 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+24-12-02.17:32:07.738 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-12-02.17:32:07.738 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-12-02.17:32:07.903 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-12-02.17:32:07.903 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1914 ms
+24-12-02.17:32:09.421 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8080"]
+24-12-02.17:32:09.441 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8080 (http) with context path ''
+24-12-02.17:32:09.453 [main            ] INFO  Application            - Started Application in 4.189 seconds (JVM running for 4.744)
+24-12-02.17:32:09.739 [http-nio-8080-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-12-02.17:32:09.740 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-12-02.17:32:09.740 [http-nio-8080-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-12-02.17:32:09.792 [http-nio-8080-exec-1] INFO  WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU开始 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1733131923</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[1]]></Content>
+<MsgId>24812484422234559</MsgId>
+</xml>
+24-12-02.17:32:10.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+24-12-02.17:32:10.033 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-12-02.17:32:10.341 [scheduling-1    ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-12-02.17:32:15.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+24-12-02.17:32:20.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+24-12-02.17:32:25.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+24-12-02.17:32:27.549 [http-nio-8080-exec-4] INFO  WeixinPortalController - 接收微信公众号信息请求omADk6tkNC439hXDMlSgf-3ESlrU开始 <xml><ToUserName><![CDATA[gh_c286e44246ca]]></ToUserName>
+<FromUserName><![CDATA[omADk6tkNC439hXDMlSgf-3ESlrU]]></FromUserName>
+<CreateTime>1733131947</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[2]]></Content>
+<MsgId>24812483122866881</MsgId>
+</xml>
+24-12-02.17:32:30.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+24-12-02.17:32:35.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+24-12-02.17:32:40.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+24-12-02.17:32:45.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+24-12-02.17:32:50.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+24-12-02.17:32:55.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+24-12-02.17:33:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+24-12-02.17:33:05.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+24-12-02.17:33:10.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+24-12-02.17:33:15.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+24-12-02.17:33:20.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 任务；检测未接收到或未正确处理的支付回调通知
+24-12-02.17:33:21.410 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-12-02.17:33:21.445 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
