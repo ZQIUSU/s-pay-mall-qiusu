@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2142db00-b157-4522-a4df-95eb6f4b0a9c" name="Changes" comment="day08:部署">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/conf/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/nginx/html/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +90,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "temurin-1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Workspace/s-pay-mall-mvc",
+    "last_opened_file_path": "D:/Workspace/s-pay-mall-qiusu",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -496,7 +496,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733211914040</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="day08:部署">
+      <option name="closed" value="true" />
+      <created>1733213457841</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1733213457841</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
