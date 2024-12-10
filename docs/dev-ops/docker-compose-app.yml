@@ -17,7 +17,7 @@ services:
       - ./nginx/logs:/var/log/nginx
       - ./nginx/html:/usr/share/nginx/html
       - ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf
-      - ./nginx/conf/conf.d:/etc/nginx/conf/conf.d
+      - ./nginx/conf/conf.d:/etc/nginx/conf.d
       - ./nginx/ssl:/etc/nginx/ssl
     networks:
       - my-network
