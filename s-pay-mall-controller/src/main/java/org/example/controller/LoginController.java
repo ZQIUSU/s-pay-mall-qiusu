@@ -10,11 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
-/**
- * @author Fuzhengwei bugstack.cn @小傅哥
- * @description 登录服务
- * @create 2024-09-28 13:58
- */
+
 @Slf4j
 @RestController()
 @CrossOrigin("*")
@@ -25,8 +21,7 @@ public class LoginController {
     private ILoginService loginService;
 
     /**
-     * http://zqiusu-studio.natapp1.cc/api/v1/login/weixin_qrcode_ticket
-     * @return
+     * https://apis.zqiusu.site/api/v1/login/weixin_qrcode_ticket
      */
     @RequestMapping(value = "weixin_qrcode_ticket", method = RequestMethod.GET)
     public Response<String> weixinQrCodeTicket() {
@@ -49,7 +44,7 @@ public class LoginController {
 
 
     /**
-     * http://zqiusu-studio.natapp1.cc/api/v1/login/check_login
+     * https://apis.zqiusu.site/api/v1/login/check_login
      */
     @RequestMapping(value = "check_login", method = RequestMethod.GET)
     public Response<String> checkLogin(@RequestParam String ticket) {
