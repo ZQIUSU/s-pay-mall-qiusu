@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2142db00-b157-4522-a4df-95eb6f4b0a9c" name="Changes" comment="修改网站图标">
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/images/image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/nginx/html/images/cat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/nginx/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="2142db00-b157-4522-a4df-95eb6f4b0a9c" name="Changes" comment="修改网站图标" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -315,14 +310,6 @@
       <option name="project" value="LOCAL" />
       <updated>1732183079656</updated>
     </task>
-    <task id="LOCAL-00013" summary="day06:完成支付回调">
-      <option name="closed" value="true" />
-      <created>1732518127920</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1732518127920</updated>
-    </task>
     <task id="LOCAL-00014" summary="day07:部署">
       <option name="closed" value="true" />
       <created>1732691001453</created>
@@ -603,7 +590,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733878023230</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="修改网站图标">
+      <option name="closed" value="true" />
+      <created>1733881194272</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1733881194272</updated>
+    </task>
+    <task id="LOCAL-00050" summary="修改网站图标">
+      <option name="closed" value="true" />
+      <created>1733881451650</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1733881451650</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
