@@ -9,6 +9,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+/**
+ * 购物车Req对象
+ */
 public class ShopCartReq {
 
     private String userId;
