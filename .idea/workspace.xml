@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2142db00-b157-4522-a4df-95eb6f4b0a9c" name="Changes" comment="修改网站图标" />
+    <list default="true" id="2142db00-b157-4522-a4df-95eb6f4b0a9c" name="Changes" comment="feat:添加备案号，链接至&quot;http://beian.miit.gov.cn/&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/nginx/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="20241126-zqiusu-docker" />
+        <entry key="$PROJECT_DIR$" value="eeee" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -182,8 +185,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.Application" />
-        <item itemvalue="Docker.s-pay-mall-controller/Dockerfile" />
         <item itemvalue="JUnit.OrderServiceTest.test_createOrder" />
+        <item itemvalue="Docker.s-pay-mall-controller/Dockerfile" />
+        <item itemvalue="应用程序.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -309,14 +313,6 @@
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
       <updated>1732183079656</updated>
-    </task>
-    <task id="LOCAL-00014" summary="day07:部署">
-      <option name="closed" value="true" />
-      <created>1732691001453</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1732691001453</updated>
     </task>
     <task id="LOCAL-00015" summary="day07:部署">
       <option name="closed" value="true" />
@@ -606,7 +602,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733881451650</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="feat:添加备案号，链接至&quot;http://beian.miit.gov.cn/&quot;">
+      <option name="closed" value="true" />
+      <created>1735097144272</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1735097144272</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,7 +676,8 @@
     <MESSAGE value="day08:部署" />
     <MESSAGE value="完结撒花" />
     <MESSAGE value="修改网站图标" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改网站图标" />
+    <MESSAGE value="feat:添加备案号，链接至&quot;http://beian.miit.gov.cn/&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:添加备案号，链接至&quot;http://beian.miit.gov.cn/&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -682,11 +687,6 @@
           <line>29</line>
           <properties field="weixinAccessToken" class="org.example.service.impl.WeixinLoginServiceImpl" />
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/s-pay-mall-controller/src/main/java/org/example/controller/AliPayController.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/s-pay-mall-controller/src/main/java/org/example/controller/AliPayController.java</url>
