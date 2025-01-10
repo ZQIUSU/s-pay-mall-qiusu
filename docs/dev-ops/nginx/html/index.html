@@ -119,7 +119,7 @@ const generateButton = document.getElementById('generateButton');
 const passwordDiv = document.getElementById('password');
 
 generateButton.addEventListener('click', function () {
-    fetch('http://localhost:8080/generate-password')
+    fetch('https://apis.zqiusu.site/generate-password')
       .then(response => response.json())
       .then(data => {
             passwordDiv.textContent = data.password;
