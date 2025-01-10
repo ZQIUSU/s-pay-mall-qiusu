@@ -1,7 +1,10 @@
 package org.example.service.impl;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.Random;
 
+@Slf4j
 public class PassWordGenerator {
     public static String generatePassword(){
         Random random = new Random();
@@ -27,6 +30,8 @@ public class PassWordGenerator {
                 }
             }
         }
-        return password.toString();
+        String lastPassword = password.toString();
+        log.info("生成密码成功:{}",lastPassword);
+        return lastPassword;
     }
 }

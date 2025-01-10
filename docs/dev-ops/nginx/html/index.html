@@ -58,7 +58,7 @@
         display: block; /* 使span表现得像块级元素 */
         margin: 10px 0; /* 添加上下外边距 */
     }
-    footer {
+    .footer {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -75,9 +75,16 @@
         border: none;
         cursor: pointer;
     }
-    #password {
-        margin-top: 20px;
-        font-size: 18px;
+    .password {
+            margin-top: 30px;
+            font-size: 18px;
+            color: black;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 200px;
+            height: 150px;
     }
 </style>
 </head>
@@ -85,16 +92,16 @@
 <div class="container">
     <h1>点击按钮生成密码</h1>
     <button id="generateButton">生成密码</button>
-    <div id="password"></div>
+    <div class="password"></div>
     <div class="product-info">
         <h2>机械键盘</h2>
-
         <img width="350" src="images/keyboard.jpeg" alt="键盘"/>
         <p>价格：¥238.8</p>
     </div>
     <button id="orderButton" class="order-button">立即下单「沙箱支付」</button>
     <span class="account-info">测试账号：oebibx2505@sandbox.com 密码：111111 支付：111111</span>
 </div>
+
 </body>
 <script>
 function getCookie(name) {
@@ -107,14 +114,15 @@ function getCookie(name) {
     }
     return null;
 }
+
 const generateButton = document.getElementById('generateButton');
 const passwordDiv = document.getElementById('password');
 
 generateButton.addEventListener('click', function () {
-    fetch('/generate-password')
-      .then(response => response.text())
+    fetch('http://localhost:8080/generate-password')
+      .then(response => response.json())
       .then(data => {
-            passwordDiv.textContent = data;
+            passwordDiv.textContent = data.password;
         })
       .catch(error => {
             console.error('请求失败:', error);
