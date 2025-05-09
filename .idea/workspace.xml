@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2142db00-b157-4522-a4df-95eb6f4b0a9c" name="Changes" comment="feat:添加生成密码功能">
+    <list default="true" id="2142db00-b157-4522-a4df-95eb6f4b0a9c" name="Changes" comment="feat:测试代码审计v1.0">
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-controller/src/test/java/org/example/test/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s-pay-mall-controller/src/test/java/org/example/test/WeiXinPortalTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/nginx/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/nginx/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-controller/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/s-pay-mall-controller/data/log/log_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-controller/src/test/java/org/example/test/Apitest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/s-pay-mall-dao/src/main/java/org/example/dao/package-info.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="eeee" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,6 +66,7 @@
 }</component>
   <component name="ProjectId" id="2nYObPYQMM4sVxAm77BjSlowBu5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -75,8 +79,12 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.Application.executor&quot;: &quot;Run&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment.yml.mysql: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment.yml: Compose 部署.executor&quot;: &quot;Run&quot;,
     &quot;Docker.s-pay-mall-controller/Dockerfile.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.OrderServiceTest.test_createOrder.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Test.test.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.WeiXinPortalTest.test.executor&quot;: &quot;Run&quot;,
     &quot;Maven.s-pay-mall-mvc-zqiusu [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.s-pay-mall-mvc-zqiusu [install].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -92,7 +100,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-1.8&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Workspace/s-pay-mall-mvc&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Workspace/openai-code-review&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -133,21 +141,24 @@
       <recent name="org.example.config" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Application">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Application" />
+  <component name="RunManager" selected="Docker.s-pay-mall-controller/Dockerfile">
+    <configuration name="Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="s-pay-mall-controller" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceTest.test_createOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WeiXinPortalTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="s-pay-mall-controller" />
       <extension name="coverage">
         <pattern>
@@ -155,30 +166,51 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.test.service" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.service.OrderServiceTest" />
-      <option name="METHOD_NAME" value="test_createOrder" />
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.WeiXinPortalTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="s-pay-mall-controller" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.Application" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="dev-ops/docker-compose-environment.yml: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="dev-ops/docker-compose-environment.yml.mysql: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mysql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <configuration name="s-pay-mall-controller/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
+          <option name="buildOnly" value="true" />
           <option name="sourceFilePath" value="s-pay-mall-controller/Dockerfile" />
         </settings>
       </deployment>
@@ -186,10 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Application" />
-        <item itemvalue="JUnit.OrderServiceTest.test_createOrder" />
         <item itemvalue="Docker.s-pay-mall-controller/Dockerfile" />
-        <item itemvalue="应用程序.Application" />
+        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml.mysql: Compose 部署" />
+        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml: Compose 部署" />
+        <item itemvalue="JUnit.Test.test" />
+        <item itemvalue="JUnit.WeiXinPortalTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -680,7 +713,8 @@
     <MESSAGE value="修改网站图标" />
     <MESSAGE value="feat:添加备案号，链接至&quot;http://beian.miit.gov.cn/&quot;" />
     <MESSAGE value="feat:添加生成密码功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:添加生成密码功能" />
+    <MESSAGE value="feat:测试代码审计v1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:测试代码审计v1.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -695,6 +729,11 @@
           <url>file://$PROJECT_DIR$/s-pay-mall-controller/src/main/java/org/example/controller/AliPayController.java</url>
           <line>63</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/s-pay-mall-controller/src/main/java/org/example/controller/WeixinPortalController.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
