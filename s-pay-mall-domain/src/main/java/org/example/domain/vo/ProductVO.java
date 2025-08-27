@@ -15,5 +15,4 @@ public class ProductVO {
     private String productDesc;
     /** 商品价格 */
     private BigDecimal price;
-
 }
