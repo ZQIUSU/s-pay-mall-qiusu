@@ -84,26 +84,22 @@
     }
 
     document.getElementById('orderButton').addEventListener('click', function() {
-        var userId = getCookie("loginToken");
-        if (!userId) {
+        var token = getCookie("loginToken");
+        if (!token) {
             window.location.href = "login.html"; // 跳转到登录页
             return;
         }
 
         var productId = "100010090091";
-        var url = 'http://127.0.0.1:8080/api/v1/alipay/create_pay_order';
-
-        var requestBody = {
-            userId: userId,
-            productId: productId
-        };
+        var url = 'http://127.0.0.1:8082/api/v1/alipay/create_pay_order';
 
         fetch(url, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + token
             },
-            body: JSON.stringify(requestBody) // 将请求体转换为JSON字符串
+            body: JSON.stringify({ productId: productId })
         })
         .then(response => response.json()) // 解析JSON格式的响应
         .then(json => {
@@ -111,8 +107,14 @@
                 var formHtml = json.data; // 获取data字段中的HTML表单字符串
                 document.body.innerHTML += formHtml; // 将表单添加到页面上
                 document.forms[0].submit(); // 自动提交表单
+            } else if (json.code === "0007") { // TOKEN_INVALID
+                // token失效，清除cookie并跳转登录页
+                document.cookie = 'loginToken=;path=/;max-age=0';
+                document.cookie = 'userId=;path=/;max-age=0';
+                window.location.href = "login.html";
             } else {
                 console.error('Error:', json.info); // 输出错误信息
+                alert(json.info || '操作失败');
             }
         })
         .catch(error => console.error('Error:', error));

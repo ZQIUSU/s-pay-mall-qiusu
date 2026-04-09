@@ -1,13 +1,12 @@
 package site.zqiusu.service;
 
-import java.io.IOException;
+import site.zqiusu.domain.res.LoginRes;
 
 public interface ILoginService {
-    String createQrCodeTicket() throws Exception;
 
-    String checkLogin(String ticket);
+    void sendSMSCode(String phone) throws Exception;
 
-    void saveLoginState(String ticket,String openid) throws IOException;
-    
+    LoginRes smsLogin(String phone, String code);
 
+    void logout(String userId);
 }

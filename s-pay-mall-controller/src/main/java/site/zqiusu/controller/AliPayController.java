@@ -38,11 +38,11 @@ public class AliPayController {
      * }
      */
     @RequestMapping(value = "create_pay_order", method =  RequestMethod.POST)
-    public Response<String> createPayOrder(@RequestBody CreatePayRequestDTO createPayRequestDTO){
+    public Response<String> createPayOrder(@RequestBody CreatePayRequestDTO createPayRequestDTO, HttpServletRequest request){
+        String userId = (String) request.getAttribute("userId");
+        String productId = createPayRequestDTO.getProductId();
         try {
-            log.info("商品下单，根据商品ID创建支付单开始 userId:{} productId:{}", createPayRequestDTO.getUserId(), createPayRequestDTO.getUserId());
-            String userId = createPayRequestDTO.getUserId();
-            String productId = createPayRequestDTO.getProductId();
+            log.info("商品下单，根据商品ID创建支付单开始 userId:{} productId:{}", userId, productId);
             // 下单
             PayOrderRes payOrderRes = orderService.createOrder(ShopCartReq.builder()
                     .userId(userId)
@@ -56,7 +56,7 @@ public class AliPayController {
                     .data(payOrderRes.getPayUrl())
                     .build();
         } catch (Exception e) {
-            log.error("商品下单，根据商品ID创建支付单失败 userId:{} productId:{}", createPayRequestDTO.getUserId(), createPayRequestDTO.getUserId(), e);
+            log.error("商品下单，根据商品ID创建支付单失败 userId:{} productId:{}", userId, productId, e);
             return Response.<String>builder()
                     .code(Constants.ResponseCode.UN_ERROR.getCode())
                     .info(Constants.ResponseCode.UN_ERROR.getInfo())

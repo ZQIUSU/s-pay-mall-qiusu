@@ -45,6 +45,22 @@ CREATE TABLE `pay_order` (
   KEY `idx_user_id_product_id` (`user_id`,`product_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 
+# 转储表 user_account
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `user_account`;
+
+CREATE TABLE `user_account` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+  `phone` varchar(16) NOT NULL COMMENT '手机号',
+  `nickname` varchar(64) DEFAULT NULL COMMENT '昵称',
+  `status` varchar(16) NOT NULL DEFAULT 'ENABLE' COMMENT '用户状态；ENABLE-启用 DISABLE-禁用',
+  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uq_phone` (`phone`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户账户表';
+
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

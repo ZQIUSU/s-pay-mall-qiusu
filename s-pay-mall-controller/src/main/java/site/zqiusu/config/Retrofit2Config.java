@@ -5,25 +5,17 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
-import site.zqiusu.service.weixin.IWeixinApiService;
 
 @Slf4j
 @Configuration
 public class Retrofit2Config {
 
-    private static final String BASE_URL = "https://api.weixin.qq.com/";
-
     @Bean
     public Retrofit retrofit() {
         return new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl("https://api.default.com/")
                 .addConverterFactory(JacksonConverterFactory.create())
                 .build();
-    }
-
-    @Bean
-    public IWeixinApiService weixinApiService(Retrofit retrofit) {
-        return retrofit.create(IWeixinApiService.class);
     }
 
 }

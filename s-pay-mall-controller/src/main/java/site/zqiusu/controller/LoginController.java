@@ -1,20 +1,17 @@
 package site.zqiusu.controller;
 
-
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import site.zqiusu.common.constants.Constants;
 import site.zqiusu.common.response.Response;
+import site.zqiusu.domain.req.SMSLoginReq;
+import site.zqiusu.domain.req.SendSMSCodeReq;
+import site.zqiusu.domain.res.LoginRes;
 import site.zqiusu.service.ILoginService;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
-/**
- * @author Fuzhengwei bugstack.cn @小傅哥
- * @description 登录服务
- * @create 2024-09-28 13:58
- */
 @Slf4j
 @RestController()
 @CrossOrigin("*")
@@ -25,56 +22,80 @@ public class LoginController {
     private ILoginService loginService;
 
     /**
-     * http://d7692a7d.natappfree.cc/api/v1/login/weixin_qrcode_ticket
-     * @return
+     * 发送短信验证码
      */
-    @RequestMapping(value = "weixin_qrcode_ticket", method = RequestMethod.GET)
-    public Response<String> weixinQrCodeTicket() {
+    @RequestMapping(value = "sms/send", method = RequestMethod.POST)
+    public Response<Void> sendSMSCode(@RequestBody SendSMSCodeReq req) {
         try {
-            String qrCodeTicket = loginService.createQrCodeTicket();
-            log.info("生成微信扫码登录 ticket:{}", qrCodeTicket);
-            return Response.<String>builder()
+            log.info("发送短信验证码 phone:{}", req.getPhone());
+            loginService.sendSMSCode(req.getPhone());
+            return Response.<Void>builder()
                     .code(Constants.ResponseCode.SUCCESS.getCode())
                     .info(Constants.ResponseCode.SUCCESS.getInfo())
-                    .data(qrCodeTicket)
                     .build();
         } catch (Exception e) {
-            log.error("生成微信扫码登录 ticket 失败", e);
-            return Response.<String>builder()
-                    .code(Constants.ResponseCode.UN_ERROR.getCode())
-                    .info(Constants.ResponseCode.UN_ERROR.getInfo())
-                    .build();
-        }
-    }
-
-
-    /**
-     * http://zqiusu-studio.natapp1.cc/api/v1/login/check_login
-     */
-    @RequestMapping(value = "check_login", method = RequestMethod.GET)
-    public Response<String> checkLogin(@RequestParam String ticket) {
-        try {
-            String openidToken = loginService.checkLogin(ticket);
-            log.info("扫码检测登录结果 ticket:{} openidToken:{}", ticket, openidToken);
-            if (StringUtils.isNotBlank(openidToken)) {
-                return Response.<String>builder()
-                        .code(Constants.ResponseCode.SUCCESS.getCode())
-                        .info(Constants.ResponseCode.SUCCESS.getInfo())
-                        .data(openidToken)
-                        .build();
-            } else {
-                return Response.<String>builder()
-                        .code(Constants.ResponseCode.NO_LOGIN.getCode())
-                        .info(Constants.ResponseCode.NO_LOGIN.getInfo())
+            log.error("发送短信验证码失败 phone:{}", req.getPhone(), e);
+            if (e instanceof site.zqiusu.common.exception.AppException) {
+                site.zqiusu.common.exception.AppException ae = (site.zqiusu.common.exception.AppException) e;
+                return Response.<Void>builder()
+                        .code(ae.getCode())
+                        .info(ae.getInfo())
                         .build();
             }
+            return Response.<Void>builder()
+                    .code(Constants.ResponseCode.SMS_SEND_FAIL.getCode())
+                    .info(Constants.ResponseCode.SMS_SEND_FAIL.getInfo())
+                    .build();
+        }
+    }
+
+    /**
+     * 验证码登录/注册
+     */
+    @RequestMapping(value = "sms/verify", method = RequestMethod.POST)
+    public Response<LoginRes> smsLogin(@RequestBody SMSLoginReq req) {
+        try {
+            log.info("验证码登录 phone:{}", req.getPhone());
+            LoginRes loginRes = loginService.smsLogin(req.getPhone(), req.getCode());
+            return Response.<LoginRes>builder()
+                    .code(Constants.ResponseCode.SUCCESS.getCode())
+                    .info(Constants.ResponseCode.SUCCESS.getInfo())
+                    .data(loginRes)
+                    .build();
         } catch (Exception e) {
-            log.error("扫码检测登录结果失败 ticket:{}", ticket, e);
-            return Response.<String>builder()
+            log.error("验证码登录失败 phone:{}", req.getPhone(), e);
+            if (e instanceof site.zqiusu.common.exception.AppException) {
+                site.zqiusu.common.exception.AppException ae = (site.zqiusu.common.exception.AppException) e;
+                return Response.<LoginRes>builder()
+                        .code(ae.getCode())
+                        .info(ae.getInfo())
+                        .build();
+            }
+            return Response.<LoginRes>builder()
                     .code(Constants.ResponseCode.UN_ERROR.getCode())
                     .info(Constants.ResponseCode.UN_ERROR.getInfo())
                     .build();
         }
     }
 
+    /**
+     * 登出
+     */
+    @RequestMapping(value = "logout", method = RequestMethod.POST)
+    public Response<Void> logout(HttpServletRequest request) {
+        try {
+            String userId = (String) request.getAttribute("userId");
+            loginService.logout(userId);
+            return Response.<Void>builder()
+                    .code(Constants.ResponseCode.SUCCESS.getCode())
+                    .info(Constants.ResponseCode.SUCCESS.getInfo())
+                    .build();
+        } catch (Exception e) {
+            log.error("登出失败", e);
+            return Response.<Void>builder()
+                    .code(Constants.ResponseCode.UN_ERROR.getCode())
+                    .info(Constants.ResponseCode.UN_ERROR.getInfo())
+                    .build();
+        }
+    }
 }
