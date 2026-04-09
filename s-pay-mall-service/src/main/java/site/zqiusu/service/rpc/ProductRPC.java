@@ -1,0 +1,20 @@
+package site.zqiusu.service.rpc;
+
+import org.springframework.stereotype.Service;
+import site.zqiusu.domain.vo.ProductVO;
+
+import java.math.BigDecimal;
+
+@Service
+public class ProductRPC {
+
+    public ProductVO queryProductByProductId(String productId){
+        ProductVO productVO = new ProductVO();
+        productVO.setProductId(productId);
+        productVO.setProductName("测试商品");
+        productVO.setProductDesc("这是一个测试商品");
+        productVO.setPrice(new BigDecimal("238.8"));
+        return productVO;
+    }
+
+}

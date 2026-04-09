@@ -38,15 +38,6 @@
             color: #666;
             font-size: 14px;
         }
-        footer {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            padding: 10px;
-            background-color: #f5f5f5;
-        }
     </style>
 </head>
 <body>
@@ -61,7 +52,6 @@
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         // 获取二维码 ticket
-<!--        fetch('https://apis.zqiusu.site/api/v1/login/weixin_qrcode_ticket')-->
         fetch('http://127.0.0.1:8080/api/v1/login/weixin_qrcode_ticket')
             .then(response => response.json())
             .then(data => {
@@ -83,7 +73,6 @@
             });
 
         function checkLoginStatus(ticket, intervalId) {
-<!--            fetch(`https://apis.zqiusu.site/api/v1/login/check_login?ticket=${ticket}`)-->
             fetch(`http://127.0.0.1:8080/api/v1/login/check_login?ticket=${ticket}`)
                 .then(response => response.json())
                 .then(data => {
@@ -112,10 +101,5 @@
         }
     });
 </script>
-<footer>
-    <p style="text-align: center;">
-        <a href="http://beian.miit.gov.cn/" target="_blank">浙ICP备2024139191号</a>
-    </p>
-</footer>
 </body>
 </html>
